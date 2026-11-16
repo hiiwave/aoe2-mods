@@ -17,10 +17,10 @@ No earlier report is required. Sections 1-2 define the measurements and projecti
 | $w$ | Destination vertical screen coordinate |
 | $a,b,c$ | Positive projection coefficients, not warp parameters |
 | $v_0,B,H$ | Original top, chosen fixed bottom, and landmark height |
-| $t(u),\\beta(u)$ | Traced roof/wall seam and fixed foot line |
+| $t(u),\beta(u)$ | Traced roof/wall seam and fixed foot line |
 | $q(u),L(u)$ | Transformed seam and original wall-band height |
 | $A,k,d$ | Roof-warp anchor, vertical scale and downward translation |
-| $\\lambda(u)$ | Remaining wall-height fraction |
+| $\lambda(u)$ | Remaining wall-height fraction |
 
 All image-coordinate lengths are pixels. The warp leaves horizontal position unchanged. Within each active column, the roof lies above the seam and the wall lies between seam and foot; these manually supplied regions must be meaningful for the depicted building. Ground remains fixed. Positive scale and noncollapsed wall bands are required. Native code uses different coordinate names, reconciled in Section 9.
 
@@ -48,7 +48,13 @@ That excludes the screenshot selection border. It is **not** the native sprite-a
 1-\frac{110}{153}\approx28.10\%.
 ```
 
-Equal final height does not imply equal roof scale or wall compression.
+For a nonempty discrete alpha mask, bounding-box height counts occupied rows inclusively:
+
+```math
+H_{\alpha}=v_{\max}-v_{\min}+1.
+```
+
+A landmark distance instead subtracts coordinates without this extra row. Do not interchange these measurements. Equal final height does not imply equal roof scale or wall compression.
 
 ## 2. World projection and missing depth
 
@@ -63,6 +69,8 @@ The world axes project down-right, down-left and upward. This is not an estimate
 ```math
 2a^2=2b^2+c^2.
 ```
+
+To see why, the projection's row vectors are $(a,-a,0)$ and $(b,b,-c)$. Their dot product is zero; their squared lengths are $2a^2$ and $2b^2+c^2$. A uniformly scaled orthographic projection requires both rows to have the same length. Without this extra condition the formula still defines a valid parallel image-space model.
 
 Adding any multiple of the following vector leaves both screen coordinates unchanged:
 
@@ -96,7 +104,9 @@ v'=g-csz=g+s(v-g)=sv+(1-s)g.
 
 Ground points remain fixed. But $g$ depends on surface depth; it is not generally one universal ground line per screen column. Uniformly squashing the sprite also squashes its projected ground footprint. More guessed landmarks do not recover missing depth.
 
-For an assumed-depth landmark mesh, its visible height is:
+For an assumed-depth mesh, assign each landmark $i$ a screen point $(u_i,v_i)$ and a hypothesized projected ground coordinate $g_i$. Set $v_i(s)=sv_i+(1-s)g_i$ and interpolate affinely within each fixed triangle. These $g_i$ are additional modeling inputs, not values determined by the screenshot alone.
+
+Assume $B$ stays fixed and the same mesh covers the visible surface without foldovers or changing visibility. An affine vertical coordinate attains its minimum over each triangle at a vertex. The resulting landmark-envelope height is therefore:
 
 ```math
 H(s)=B-\min_i\{sv_i+(1-s)g_i\}.
@@ -134,7 +144,7 @@ W(u,t(u))=q(u),\qquad W(u,\beta(u))=\beta(u).
 
 This is affine in the vertical coordinate for each fixed column, not necessarily one global affine transformation.
 
-**Order preservation.** If the roof map increases vertically, maps $t$ to $q$, and $q\lt\beta$, its join to the wall and unchanged ground is continuous and increasing in each column. Different columns retain different horizontal coordinates, so the continuous map is injective. This prevents foldovers, not ugly proportions or lost raster details.
+**Order preservation.** If the roof map increases vertically, maps $t$ to $q$, and $q\lt\beta$, its join to the wall and unchanged ground is continuous and increasing in each column. Different columns retain different horizontal coordinates, so the continuous map is injective. For a fixed column, both the roof derivative and wall derivative $\lambda$ are positive, and the endpoint equalities join the intervals in order. Across columns, $u$ is unchanged; two different columns cannot map to the same point. Continuity across columns additionally requires continuous boundary curves and roof parameters on the active domain. This prevents continuous-map foldovers, not ugly proportions or lost raster details.
 
 ## 4. Rigid Roof-Shift
 
@@ -232,7 +242,7 @@ A screen edge of slope $m$ transforms under $u'=u,\ v'=kv+C$ to:
 m'=km.
 ```
 
-The roof gets flatter for $0\lt k\lt1$. This is an intentional image-space approximation, not a claim of unchanged 3D roof geometry.
+Indeed, $du'/du=1$ and $dv'/du=k\,dv/du$, so the finite screen slope is multiplied by $k$. Vertical edges remain vertical. The roof gets flatter for $0\lt k\lt1$. This is an intentional image-space approximation, not a claim of unchanged 3D roof geometry.
 
 ## 6. Inverse sampling
 
@@ -255,6 +265,8 @@ Ground, for $w\ge\beta(u)$:
 ```math
 v=w.
 ```
+
+The roof branch follows by solving $w=kv+C$ for $v$; the wall branch follows by solving $w=q_h+\lambda_h(v-t)$. At $w=q_h$ both expressions return $t$, and at $w=\beta$ the wall expression returns $\beta$. Thus the continuous inverse agrees at both boundaries; choosing half-open intervals avoids double assignment.
 
 The native implementation rounds to the nearest source pixel with NumPy's ties-to-even rounding and transforms aligned layers. It uses no generative fill. Subsequent native BC1/BC4 encoding is lossy, so copied pre-encoding colors need not remain identical.
 
