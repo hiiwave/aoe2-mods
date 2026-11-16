@@ -2,6 +2,14 @@
 
 This page integrates the earlier lecture and distinguishes its **historical screenshot experiment** from the **current native-sprite implementation**. It does not recover the game's 3D geometry from a screenshot. See [Technical specification](TECHNICAL-SPEC.md) for delivered parameters and [Test status](TEST-STATUS.md) for evidence.
 
+## Conceptual figures
+
+![Illustrative comparison of roof transformations](images/methods-concept.svg)
+
+![Illustrative roof, seam and fixed-foot coordinate map](images/coordinate-map.svg)
+
+These are explanatory vector diagrams, **not gameplay screenshots or measured asset previews**. Their sample $k=0.60$, $d=30$ px and seam/anchor at 200 are deliberately illustrative, not the production 110 px calibration.
+
 ## 1. Three meanings of height
 
 Keep separate: world height; screen distance between chosen landmarks; and decoded main-alpha bounding-box height.
@@ -263,7 +271,7 @@ v'=t(u)+k(v-t(u))
 
 for roof pixels. It fixes the seam, but varying $t(u)$ can bend a formerly straight ridge. Piecewise-affine meshes can constrain edges, yet moving a ridge below neighboring fixed eaves may invert triangles.
 
-The tested Feudal2 equal-drop mesh needed a 45 px drop to change 155 into 110 px. One ridge vertex moved from 126 to 171, below its fixed eave at 153, folding that mesh.
+In the separate later Feudal2 Roof-Flatten experiment (not a measurement from the lecture or the delivered build script), the tested equal-drop mesh needed a 45 px drop to change 155 into 110 px. One ridge vertex moved from 126 to 171, below its fixed eave at 153, folding that mesh.
 
 **This is a failure of the tested constraints, not a theorem that 110 px Roof-Flatten is impossible.** Different ridge displacements, mesh topology or roof redesign may work. If walls are compressed too, call it combined/hybrid rather than pure Roof-Flatten.
 
