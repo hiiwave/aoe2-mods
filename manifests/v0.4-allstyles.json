@@ -1,0 +1,549 @@
+{
+  "version": "v0.4",
+  "author": "hiiwave",
+  "asset_count": 108,
+  "changed_profiles": 11,
+  "assets": [
+    {
+      "file": "b_afri_house_age2_destruction_x1.sld",
+      "bytes": 6185020,
+      "sha256": "a8fcf2275619c538696665c36cd7180cb1d417553873b7bcabd00a3957f9a48d"
+    },
+    {
+      "file": "b_afri_house_age2_rubble_x1.sld",
+      "bytes": 58732,
+      "sha256": "0456597315c98478e23e937e542f55f3bea0a89b0f95327a04bbf1e85400127a"
+    },
+    {
+      "file": "b_afri_house_age2_x1.sld",
+      "bytes": 83200,
+      "sha256": "99ddbf8436249f59c8632f85e77ca636cf37a939bbf878b327ab47fe871a0537"
+    },
+    {
+      "file": "b_afri_house_age3_destruction_x1.sld",
+      "bytes": 5891068,
+      "sha256": "74a9202979d274129b974a8bdf3a27d9e5f52cd1fd68c6907c7f39d45142d52c"
+    },
+    {
+      "file": "b_afri_house_age3_rubble_x1.sld",
+      "bytes": 53824,
+      "sha256": "ef619b9ad6dbb6d4e16f066140503be8fd40a658024757e5c2f6d926b6c75866"
+    },
+    {
+      "file": "b_afri_house_age3_x1.sld",
+      "bytes": 83632,
+      "sha256": "ee45dc5e2a493b68cd9eabde1410e9654cb5da531c1fbfb9095b00e47b2365bc"
+    },
+    {
+      "file": "b_ande_house_age2_destruction_x1.sld",
+      "bytes": 9737284,
+      "sha256": "d374bf716a9fb0113c44bd058198a2c08ec818bcd51c07f752cefda82ee91315"
+    },
+    {
+      "file": "b_ande_house_age2_rubble_x1.sld",
+      "bytes": 55264,
+      "sha256": "a01af46aba20ad55456be40a9b52a79efb2635e55445a5747e030732cec8a579"
+    },
+    {
+      "file": "b_ande_house_age2_x1.sld",
+      "bytes": 92356,
+      "sha256": "b9b992b0802b0221481a70af5d1ecfb626c21a1d5db9b355b660bf34c1faec4f"
+    },
+    {
+      "file": "b_ande_house_age3_destruction_x1.sld",
+      "bytes": 6365164,
+      "sha256": "a5a413055a1fe4522db5632927f7e50c52b8d98d0e93af751b5c0ede303a13f5"
+    },
+    {
+      "file": "b_ande_house_age3_rubble_x1.sld",
+      "bytes": 56824,
+      "sha256": "4b87f7f29c0d777be57afe97edab24f38a5eacbb3c088bc42d4adcf8d5257df4"
+    },
+    {
+      "file": "b_ande_house_age3_x1.sld",
+      "bytes": 91780,
+      "sha256": "207efd98109b88d5adb92bae17d072a9d10947ba804ab23cd6efcaf166da18f4"
+    },
+    {
+      "file": "b_archaic_house_age1_destruction_x1.sld",
+      "bytes": 6236308,
+      "sha256": "b5cceedcc99819ae627d400ded417317585d0c1f15ce08ba77cedfdd78cd84d8"
+    },
+    {
+      "file": "b_archaic_house_age1_rubble_x1.sld",
+      "bytes": 57916,
+      "sha256": "bb13bf8850d3c0f5a59a48ac46d1e57e9ccdc8a7f8240d89d54fb041c0d089a2"
+    },
+    {
+      "file": "b_archaic_house_age1_x1.sld",
+      "bytes": 83056,
+      "sha256": "2e0e2ddbd1cda07e44e2421e4e8f06e5ffbb4a6458baa6217da411efd8fa1697"
+    },
+    {
+      "file": "b_asia_house_age2_destruction_x1.sld",
+      "bytes": 6630748,
+      "sha256": "3923e7cd4e597bb2964753d40f3f37fa765fc840ace7babdd84ef4a7f5c9a09a"
+    },
+    {
+      "file": "b_asia_house_age2_rubble_x1.sld",
+      "bytes": 58156,
+      "sha256": "893cad610caa39c0ddacc7b9fccf3f19d569f636d74d760f1fbe9de3faad931e"
+    },
+    {
+      "file": "b_asia_house_age2_x1.sld",
+      "bytes": 93892,
+      "sha256": "b1cd0cd4b7e528c893cdb2bf2d988d26e770a850b05e1407fcc57baf77814dc7"
+    },
+    {
+      "file": "b_asia_house_age3_destruction_x1.sld",
+      "bytes": 6972556,
+      "sha256": "0becc265e3ef5adc2b6a6f910597c901cfa9d084acafab957c5cf575e43da2a8"
+    },
+    {
+      "file": "b_asia_house_age3_rubble_x1.sld",
+      "bytes": 62908,
+      "sha256": "b2d8a139470d6399864d80cf8589db2b0178841a1de061278311a9ee5fce92e1"
+    },
+    {
+      "file": "b_asia_house_age3_x1.sld",
+      "bytes": 95404,
+      "sha256": "2d83b1ce25777d8d823922d52e35f4b5c356814fa88e1a7c93d20cbe1232d5ee"
+    },
+    {
+      "file": "b_ceas_house_age2_destruction_x1.sld",
+      "bytes": 6697888,
+      "sha256": "470c5851201a15785a2b889c6247b6a14d88a6430bdc9c50aad42b651bd73e7f"
+    },
+    {
+      "file": "b_ceas_house_age2_rubble_x1.sld",
+      "bytes": 60604,
+      "sha256": "ae11e8a3e68d39591d9070800d8abd91835c9fafdc1c615cb9a6463ab23269e2"
+    },
+    {
+      "file": "b_ceas_house_age2_x1.sld",
+      "bytes": 93328,
+      "sha256": "79e6ac53cdbc8af95b7a4904cff6d5edce3f22e79a18b62bff17676984f88cd3"
+    },
+    {
+      "file": "b_ceas_house_age3_destruction_x1.sld",
+      "bytes": 6751264,
+      "sha256": "d3d4513378748dbb21b548ad3bca0c90e965e5fc5bea71fedef16c9e8054977b"
+    },
+    {
+      "file": "b_ceas_house_age3_rubble_x1.sld",
+      "bytes": 62884,
+      "sha256": "52005a0de35ea11c172339c95735419bf9bc220669c516c85dbfb7f40b9fd862"
+    },
+    {
+      "file": "b_ceas_house_age3_x1.sld",
+      "bytes": 89272,
+      "sha256": "7a4ef51db05a3fbc9971a6c0ecedbdcac383d39caffd7173ad4c87c55f05441c"
+    },
+    {
+      "file": "b_dark_house_age1_destruction_x1.sld",
+      "bytes": 5983864,
+      "sha256": "0fad320617ec1edf57e41b0c947562e93bc55d854a0278fd88e076ea32c436d1"
+    },
+    {
+      "file": "b_dark_house_age1_rubble_x1.sld",
+      "bytes": 43720,
+      "sha256": "7f23b10855c1182ce8921b95f70ac4467c01bd981be925abcc646910b017c9d2"
+    },
+    {
+      "file": "b_dark_house_age1_x1.sld",
+      "bytes": 83728,
+      "sha256": "6c918cfe6170329020a83b5bf43b8a059486a8a8b9b5eb558c89becc6ee06232"
+    },
+    {
+      "file": "b_east_house_age2_destruction_x1.sld",
+      "bytes": 8689252,
+      "sha256": "873a25ed7e78d9bae534951ccd3ac93e9cac14b55c10894ce3e6e6540499f3d1"
+    },
+    {
+      "file": "b_east_house_age2_rubble_x1.sld",
+      "bytes": 81136,
+      "sha256": "18ec7e7e978d67402ad9898f9ebf5cd4c15c76a3bbfd461d718499329a382e91"
+    },
+    {
+      "file": "b_east_house_age2_x1.sld",
+      "bytes": 109888,
+      "sha256": "d653e94141d70df92f5982deaa7018db864b15db8334731c1a6035d1368875f3"
+    },
+    {
+      "file": "b_east_house_age3_destruction_x1.sld",
+      "bytes": 9160108,
+      "sha256": "3696f60da3619e21ddf05d2ad57f7f9f9e4c793d481044b54cde97245a4a976b"
+    },
+    {
+      "file": "b_east_house_age3_rubble_x1.sld",
+      "bytes": 84820,
+      "sha256": "1adab46bc5719a3998d0d6db5576e7599292fdf5aeeff473f2a407f15e13d23e"
+    },
+    {
+      "file": "b_east_house_age3_x1.sld",
+      "bytes": 117484,
+      "sha256": "2a3946b4911f92755745dbdca2a7a670c72922434fe84a03de0b30b6ddb264f6"
+    },
+    {
+      "file": "b_greek_house_age2_destruction_x1.sld",
+      "bytes": 6985192,
+      "sha256": "5c3f669367417ea3a75597af54ef0c568167dea51eb2c03e3761e476f89410b1"
+    },
+    {
+      "file": "b_greek_house_age2_rubble_x1.sld",
+      "bytes": 62284,
+      "sha256": "17d1a0fb83e37df379d37f0810de4152b65089d88f5413d8c1d207a8180aa6c4"
+    },
+    {
+      "file": "b_greek_house_age2_x1.sld",
+      "bytes": 93748,
+      "sha256": "3b413a60f9bdade3821aa2ae82a0f5e8d8fb5924d90e3054d956b0cdb48fe1f7"
+    },
+    {
+      "file": "b_greek_house_age3_destruction_x1.sld",
+      "bytes": 7200340,
+      "sha256": "0abebcba28b0168cce2bd2735d286e846087e0cf64ea80e4b20065b486e3885f"
+    },
+    {
+      "file": "b_greek_house_age3_rubble_x1.sld",
+      "bytes": 64132,
+      "sha256": "0ed6d77060cbfac11ceb47bb4e19e3c863e570ee34fd25d6a903a197a1e99773"
+    },
+    {
+      "file": "b_greek_house_age3_x1.sld",
+      "bytes": 97036,
+      "sha256": "7dd8881e67377739c9c5ca0f75b486e8a258f91f25aa1a1b5b2696ea35f1c33c"
+    },
+    {
+      "file": "b_indi_house_age2_destruction_x1.sld",
+      "bytes": 9115876,
+      "sha256": "8f41558cce50fbc049c74e2df800cdd72a1ca390c2a618145b2b6129b61be90d"
+    },
+    {
+      "file": "b_indi_house_age2_rubble_x1.sld",
+      "bytes": 85600,
+      "sha256": "f4c8c4562cdc919a01bcabe56143af718acb32cf9361c100e0deb8b3d186a077"
+    },
+    {
+      "file": "b_indi_house_age2_x1.sld",
+      "bytes": 107152,
+      "sha256": "00db442e0d59b810c0d911802b217e9b3f33ce60bbf19164878f35cc031ec6d8"
+    },
+    {
+      "file": "b_indi_house_age3_destruction_x1.sld",
+      "bytes": 6717784,
+      "sha256": "37ee9aa7894a49a64a5b2b932dc54fcca571d69f0779ffb7e850b5b554a2aabd"
+    },
+    {
+      "file": "b_indi_house_age3_rubble_x1.sld",
+      "bytes": 64312,
+      "sha256": "00ef2ab3a948587775f02a95c4e7cb65cabdaeb10200f6470f7446777d8e2451"
+    },
+    {
+      "file": "b_indi_house_age3_x1.sld",
+      "bytes": 85156,
+      "sha256": "04dc9b1aceac0127dd75f63731bf2f7cb46012291152931dfeaf602662893856"
+    },
+    {
+      "file": "b_medi_house_age2_destruction_x1.sld",
+      "bytes": 6752080,
+      "sha256": "d797566e4241cdbcdb1d3ae4aa661902ffac4af00802c5db62081626ab4a110d"
+    },
+    {
+      "file": "b_medi_house_age2_rubble_x1.sld",
+      "bytes": 105480,
+      "sha256": "c0d954633f0c349e2088c6a3b13ab151f8cc174f3429982e9e2cdc8397707f36"
+    },
+    {
+      "file": "b_medi_house_age2_x1.sld",
+      "bytes": 91660,
+      "sha256": "ca8a173ff8b03f9a99114bd6a0607092f3512daeaeb767b1038af3354c83800b"
+    },
+    {
+      "file": "b_medi_house_age3_destruction_x1.sld",
+      "bytes": 9482836,
+      "sha256": "d6fbda461999259497acb283338c5e7c8aad0c3ce83690af9414a960a8442880"
+    },
+    {
+      "file": "b_medi_house_age3_rubble_x1.sld",
+      "bytes": 88564,
+      "sha256": "bfc9898ab596b96abad6f7d1ae193ae713f3a8d233935c5251616c06cdbdf6ea"
+    },
+    {
+      "file": "b_medi_house_age3_x1.sld",
+      "bytes": 117844,
+      "sha256": "8367da053e91ed38cdb34632879d2d4d1f62948611afd28c5945f9d77238c746"
+    },
+    {
+      "file": "b_meso_house_age2_destruction_x1.sld",
+      "bytes": 9696688,
+      "sha256": "93516939a7969c127827f1b038a3041372430f71cac3450914a187a6c4e672f9"
+    },
+    {
+      "file": "b_meso_house_age2_rubble_x1.sld",
+      "bytes": 91984,
+      "sha256": "75530086cbc87be2b9b9c229c38430c67a56f5c26d5857d4d78bd30262118789"
+    },
+    {
+      "file": "b_meso_house_age2_x1.sld",
+      "bytes": 114460,
+      "sha256": "c19daa246db9a5fe78a5a3f6ca627cbe9c08409fca16d625f9a5a7eaeff65b68"
+    },
+    {
+      "file": "b_meso_house_age3_destruction_x1.sld",
+      "bytes": 6638980,
+      "sha256": "75eb8c31aaf6dcae6037c2b6adb2a07e6e482386bc7efeb51f19a52f6c5bc585"
+    },
+    {
+      "file": "b_meso_house_age3_rubble_x1.sld",
+      "bytes": 60436,
+      "sha256": "5582fe682772491c89df36280971b84553b9b4bbc7f38ab223578d0fde065921"
+    },
+    {
+      "file": "b_meso_house_age3_x1.sld",
+      "bytes": 88312,
+      "sha256": "3acf754080fafbba8f1b60ef950cf3694810c67fb4a083bb41d247d106aba4a7"
+    },
+    {
+      "file": "b_nors_house_age2_destruction_x1.sld",
+      "bytes": 6031960,
+      "sha256": "19d36fafb436e1fa85cab89a9d7fa846eb03040ef1695c6742f71eaba1ee159e"
+    },
+    {
+      "file": "b_nors_house_age2_rubble_x1.sld",
+      "bytes": 54976,
+      "sha256": "82e89545e816a505dfcbc1d135529c75201816e47b0d4f370acf7ab7e011ec5e"
+    },
+    {
+      "file": "b_nors_house_age2_x1.sld",
+      "bytes": 89200,
+      "sha256": "33acf8875d5ba3aba6836f42f3a3e04aba2c95f171e83330661ebf244b010cca"
+    },
+    {
+      "file": "b_nors_house_age3_destruction_x1.sld",
+      "bytes": 5759488,
+      "sha256": "61dc87b79b148d9366c91e06749b3594a349dfa27be8ac232990e7b5f3ed677c"
+    },
+    {
+      "file": "b_nors_house_age3_rubble_x1.sld",
+      "bytes": 53068,
+      "sha256": "ac9edafa04cb6582e719e4b18ae7f9b5ee82c41c5ea3864ad8616f030a7cded6"
+    },
+    {
+      "file": "b_nors_house_age3_x1.sld",
+      "bytes": 84184,
+      "sha256": "d3995ede4309c5044defa556f68dbed8e4733d8a1f475c108a685675a2273120"
+    },
+    {
+      "file": "b_orie_house_age2_destruction_x1.sld",
+      "bytes": 8653564,
+      "sha256": "b0259abf84fa2626eaf6f9740564593c8ae1d67a275df0b81f9666709b761702"
+    },
+    {
+      "file": "b_orie_house_age2_rubble_x1.sld",
+      "bytes": 80128,
+      "sha256": "147ed1b6127364db3ab3fccf54edd2a25d286e675a285c2ee6922887748ef8e8"
+    },
+    {
+      "file": "b_orie_house_age2_x1.sld",
+      "bytes": 111196,
+      "sha256": "0e1006d5769bb3923b9e556808530d106a9b38077abb2117590e531bdcae3c4c"
+    },
+    {
+      "file": "b_orie_house_age3_destruction_x1.sld",
+      "bytes": 8847772,
+      "sha256": "dd94f5504811e236128db37a389f260c3d32714174815cbce40d985980922001"
+    },
+    {
+      "file": "b_orie_house_age3_rubble_x1.sld",
+      "bytes": 83260,
+      "sha256": "e53c69616d0b12763148f81eb7a68d70d3be5af6ee4b30e5aacf56b13f9bb0e8"
+    },
+    {
+      "file": "b_orie_house_age3_x1.sld",
+      "bytes": 110404,
+      "sha256": "55359e0fa25805a948a2d707fc92dbeeb3b13b8f5007960459bdd1157c844ff2"
+    },
+    {
+      "file": "b_persian_house_age2_destruction_x1.sld",
+      "bytes": 6866128,
+      "sha256": "8d6415292153a7b8f2ce2522c57b38772d1112b7ee8c616ecf9b4bf5619031c6"
+    },
+    {
+      "file": "b_persian_house_age2_rubble_x1.sld",
+      "bytes": 52828,
+      "sha256": "cf7354328980b6445eeccff6429cddd2707a1a74bb357970207ebcfc4586fb4c"
+    },
+    {
+      "file": "b_persian_house_age2_x1.sld",
+      "bytes": 91756,
+      "sha256": "271b5cd2e235bf0a872b9aaae1ddd1e04a9d97ae64d01b4a0a9fcae70b395729"
+    },
+    {
+      "file": "b_persian_house_age3_destruction_x1.sld",
+      "bytes": 7157248,
+      "sha256": "1985841fd8070b22e7550d387f1c0d31757b68c7a7565e9519abcdfcb0381f9c"
+    },
+    {
+      "file": "b_persian_house_age3_rubble_x1.sld",
+      "bytes": 66100,
+      "sha256": "770f5bd726a416c27e5e87466f66658d0ed69eadd980fa1e42963ccb6ee71ace"
+    },
+    {
+      "file": "b_persian_house_age3_x1.sld",
+      "bytes": 93412,
+      "sha256": "02b0cf93cd296ba3061e425fd532656d2fb876acf7071c00b002d66bd4fe1797"
+    },
+    {
+      "file": "b_puru_house_age2_destruction_x1.sld",
+      "bytes": 6360964,
+      "sha256": "ba5eefefbe7a8ad8d7edf6634707c54ba087153f3bd29f6fdec3e7efb47a978a"
+    },
+    {
+      "file": "b_puru_house_age2_rubble_x1.sld",
+      "bytes": 52612,
+      "sha256": "58e74a46453a489d1634f2976429cb191b64168242325602039438c44e32eb2f"
+    },
+    {
+      "file": "b_puru_house_age2_x1.sld",
+      "bytes": 88072,
+      "sha256": "560e706e8707229a5b293c9ea6563a00cbfd2d0e980b986a8e9c26d35f622543"
+    },
+    {
+      "file": "b_puru_house_age3_destruction_x1.sld",
+      "bytes": 6207004,
+      "sha256": "bb9febd8c497e2cd4378b41404599e4d76d5df1d8458af85cbc250c6239a9044"
+    },
+    {
+      "file": "b_puru_house_age3_rubble_x1.sld",
+      "bytes": 56452,
+      "sha256": "19592d27c1564911f1e3bcabe1804026d188d35496207707ddfeccbd591d90d5"
+    },
+    {
+      "file": "b_puru_house_age3_x1.sld",
+      "bytes": 82384,
+      "sha256": "f6d0e3bb74e1d7349c9cde712beb2b3ab15cfe257338da8d4ae57855cc9941a8"
+    },
+    {
+      "file": "b_seas_house_age2_destruction_x1.sld",
+      "bytes": 6565036,
+      "sha256": "155fb2287c1a8c35b722324aa8a8f16ee5c8b49b1f0b8a86fd99c8b4283c5a20"
+    },
+    {
+      "file": "b_seas_house_age2_rubble_x1.sld",
+      "bytes": 63436,
+      "sha256": "67c1fa071e419e29463af906b1ab47115508f9bcbf724000d98b7a116e56eaf9"
+    },
+    {
+      "file": "b_seas_house_age2_x1.sld",
+      "bytes": 87244,
+      "sha256": "cb875691978cfb72c5aaa993bbaf81376a7ecd2af72093b520576bff350ebe48"
+    },
+    {
+      "file": "b_seas_house_age3_destruction_x1.sld",
+      "bytes": 9312388,
+      "sha256": "6363cab3504452067950ccdcfee8a345bbe646c12347363538c463fb0b44a728"
+    },
+    {
+      "file": "b_seas_house_age3_rubble_x1.sld",
+      "bytes": 86620,
+      "sha256": "4c04ca51e54566d3c9f41b57871c3927978efe19b6c23624ec99a251c2be457f"
+    },
+    {
+      "file": "b_seas_house_age3_x1.sld",
+      "bytes": 117100,
+      "sha256": "8e6f690ae28e57d09cbd988d8d1c4e17ba3762d34bc763b0af6e87fcad8d04e0"
+    },
+    {
+      "file": "b_slav_house_age2_destruction_x1.sld",
+      "bytes": 6670096,
+      "sha256": "b23343578de28af0fe5e25ef42ca9802aac2e700a87db1f6d6a6f0b901648a30"
+    },
+    {
+      "file": "b_slav_house_age2_rubble_x1.sld",
+      "bytes": 61132,
+      "sha256": "060ae0d335a4b9cffca02e0772708c39e884f3c95b5b23685e0036cf7be9ca21"
+    },
+    {
+      "file": "b_slav_house_age2_x1.sld",
+      "bytes": 88156,
+      "sha256": "6f45aa2dc1f6bb74b04c622dc5d45cfbae1a846d68431e2bf6269da9fdfc62d5"
+    },
+    {
+      "file": "b_slav_house_age3_destruction_x1.sld",
+      "bytes": 9302908,
+      "sha256": "36a13a20d903fd8dd2b6f3bbf72271571720b31c57b6575f646b78a196c4ce77"
+    },
+    {
+      "file": "b_slav_house_age3_rubble_x1.sld",
+      "bytes": 87436,
+      "sha256": "d14d34ae29dbacb43c427774ff1459a44853bbb4cf0a69fb8b85dbc42152115e"
+    },
+    {
+      "file": "b_slav_house_age3_x1.sld",
+      "bytes": 114580,
+      "sha256": "9cc9caf1663069b93746602dbf92ea41e99a3821e07205b440b9401a581d9041"
+    },
+    {
+      "file": "b_thracian_house_age2_destruction_x1.sld",
+      "bytes": 5919904,
+      "sha256": "af36888cc1b693213f1f396f176a3a6f4749f24dafb0296a9a55c511356f9c0d"
+    },
+    {
+      "file": "b_thracian_house_age2_rubble_x1.sld",
+      "bytes": 38596,
+      "sha256": "64a69e259e71f3c6c981709d539c42a4b78b0a2588d4b3cf8e837b9ce7920765"
+    },
+    {
+      "file": "b_thracian_house_age2_x1.sld",
+      "bytes": 83308,
+      "sha256": "8fb1bb6476daeccb06e9344d6673b5b138f93d052682182b3112cb8df767c791"
+    },
+    {
+      "file": "b_thracian_house_age3_destruction_x1.sld",
+      "bytes": 16666996,
+      "sha256": "af8d17e97467f7f833584a0c0ff0071c40d86f056f094a8cc9cede666fc65c40"
+    },
+    {
+      "file": "b_thracian_house_age3_rubble_x1.sld",
+      "bytes": 160552,
+      "sha256": "39fb813d0efd44ded6e232a14cf684569fd7da989168b00d419aa3dd5e0c9881"
+    },
+    {
+      "file": "b_thracian_house_age3_x1.sld",
+      "bytes": 192556,
+      "sha256": "fe16375ac279911af897ef18af7bcba9ae05f4f4977524f3a2b03a4cb6244c01"
+    },
+    {
+      "file": "b_west_house_age2_destruction_x1.sld",
+      "bytes": 9125176,
+      "sha256": "4f94b6a203a0c303a20ded39fc0a51115032f8f6cf9c6629cc7a445b8df11da5"
+    },
+    {
+      "file": "b_west_house_age2_rubble_x1.sld",
+      "bytes": 88684,
+      "sha256": "8b9cd2021c8685a1c75d41bde00a902f43ea59c0e34e8671572cfc0f833952f2"
+    },
+    {
+      "file": "b_west_house_age2_x1.sld",
+      "bytes": 111664,
+      "sha256": "9c14f4c8ae83762bde3865b6196b39e518a393211d616221721140ae4bb09694"
+    },
+    {
+      "file": "b_west_house_age3_destruction_x1.sld",
+      "bytes": 8658028,
+      "sha256": "666fab508605cd0e4cfc0556c9c3e2f7b415f1735829c8690990ea0443dae402"
+    },
+    {
+      "file": "b_west_house_age3_rubble_x1.sld",
+      "bytes": 77032,
+      "sha256": "23903ad5d0ade927641eb554a00929a34d03740326c573d243dc273729314fb7"
+    },
+    {
+      "file": "b_west_house_age3_x1.sld",
+      "bytes": 111568,
+      "sha256": "ffa73dd259e81a636a9d02c53a3890eaebf7d863233ae8a987f369e4ea2749a8"
+    }
+  ],
+  "qa_summary": "QA-SUMMARY.json"
+}
