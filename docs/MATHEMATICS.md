@@ -58,6 +58,12 @@ A landmark distance instead subtracts coordinates without this extra row. Do not
 
 ## 2. World projection and missing depth
 
+![World-axis projection diagram](images/lecture-world-axes.svg)
+
+![Screen-coordinate axes](images/lecture-screen-axes.svg)
+
+These are the original coordinate diagrams used for the historical house study, preserved as vectors. The world axes explain the projected directions of $x,y,z$; screen $u,v$ point right/down. Numerical pairs printed in the illustrations are drawing coordinates, not reconstructed world coordinates. The diagrams define a modeling convention, not a measured game camera.
+
 Let $(x,y,z)$ be hypothetical world coordinates, with $z$ height. Let screen $(u,v)$ increase rightward/downward. A useful parallel-projection model is:
 
 ```math
@@ -111,6 +117,10 @@ Assume $B$ stays fixed and the same mesh covers the visible surface without fold
 ```math
 H(s)=B-\min_i\{sv_i+(1-s)g_i\}.
 ```
+
+![Original house screenshot with 35 control points and the height calibration curve](images/historical-35-point-mesh.png)
+
+The actual historical house image above contains **35 manually placed points, indexed 0-34**, a triangulated mesh, and its height-versus-scale calibration. It comes from the original screenshot experiment, not the current 110 px native-sprite pipeline. The model combines observed image points with assumed ground coordinates $g_i$ and Delaunay triangulation; adding points constrains the chosen mesh but does not resolve unknown depth. The source measurements contain 35 entries. This is an annotated asset study, not a before/after gameplay test.
 
 Its visible reduction is $1-H(s)/H(1)$, not $1-s$. Its example $s\approx0.4923$ was a mesh-specific calibration, **not** the calibration for the rigid or hybrid methods below. The function can have corners when the highest landmark changes.
 
