@@ -5,6 +5,8 @@ Lawful local game SLD files -> bounded decoder -> selected original frame -> age
 
 No service, backend or database is required. The architecture is an offline asset build pipeline. Current profiles are hand-traced, not automatically generalizable to arbitrary architecture.
 
+Full derivations, historical screenshot examples and the link to the current 110 px implementation are in [MATHEMATICS.md](MATHEMATICS.md).
+
 ## Height and coordinates
 Height means the decoded main RGBA layer's nontransparent bounding-box height, excluding the separate shadow layer. Chimneys and visible ground details in the main image count. It is neither a world-space 3D height nor a uniform scale factor.
 
@@ -17,20 +19,20 @@ For each horizontal coordinate $x$, $t(x)$ is a traced roof/wall seam and $b(x)$
 
 **Roof-Shift Hybrid:** vertically compress the roof around anchor $a$ by scale $k>0$, then translate it downward by $d$. Let $y$ denote an output-image coordinate and $y_s$ the corresponding source coordinate. The transformed seam is:
 
-$$
+```math
 n(x)=a+k\bigl(t(x)-a\bigr)+d.
-$$
+```
 
 Provided $n(x)<b(x)$, use this inverse map in the active warped region:
 
-$$
+```math
 y_s(x,y)=
 \begin{cases}
 a+\dfrac{y-a-d}{k}, & y<n(x),\\[6pt]
 t(x)+\dfrac{(y-n(x))(b(x)-t(x))}{b(x)-n(x)}, & n(x)\le y<b(x),\\[6pt]
 y, & y\ge b(x).
 \end{cases}
-$$
+```
 
 The roof formula inverts the scale and translation. The wall formula maps the new seam back to the original seam while fixing the foot line: at $y=n(x)$ it gives $y_s=t(x)$, and at $y=b(x)$ it gives $y_s=b(x)$. Outside the profile's active region, coordinates remain unchanged.
 
