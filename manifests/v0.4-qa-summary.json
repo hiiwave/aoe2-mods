@@ -1,0 +1,75 @@
+{
+  "version": "v0.4",
+  "author": "hiiwave",
+  "graphics_files": 108,
+  "native_validation": {
+    "intact_assets": 36,
+    "target_alpha_height_px": 110,
+    "architecture_styles": 17,
+    "outline_and_masks": "passed",
+    "all_lifecycle_frames_decoded": "passed"
+  },
+  "blind_review": {
+    "assets": 36,
+    "candidates_per_asset": 3,
+    "reviewers_per_asset": 1,
+    "cross_group": true,
+    "profiles_changed": 11,
+    "profiles_retained": 25,
+    "top_ties": 10,
+    "consensus_claim": false
+  },
+  "runtime": {
+    "release_blockers_in_sample": [],
+    "final_installed_graphic_hashes_matched": 108,
+    "arabia_save_reload": "Same initial4v4 built-inExtremeAI match reloaded around21min; finalv0.4 screenshots around22min, not exact-frame before/after.",
+    "captured_players": [
+      "Bohemians Feudal",
+      "Celts Castle",
+      "Aztecs Castle",
+      "Lithuanians Castle"
+    ],
+    "lifecycle_samples": [
+      "Ande/Incas Feudal450physical death frames",
+      "Medi/Byzantines Feudal5physical rubble frames",
+      "West/Britons Feudal revised roof",
+      "Ceas/Tatars Castle",
+      "Asia/Chinese Castle"
+    ],
+    "matched_gap_scenes": [
+      "Asia/Chinese Castle",
+      "West/Britons Castle"
+    ],
+    "gap_findings": "Original and finalmod both permit the open1tile gap and block the touching pair. Same fixture geometry/camera/zoom, different capture times and randomized original variants; visual differences include selectedvariant and shortening. Gap visible in both in these examples; reduced occlusion, not a newly passable path.",
+    "runtime_architecture_styles": [
+      "slav",
+      "west",
+      "meso",
+      "ande",
+      "medi",
+      "ceas",
+      "asia"
+    ],
+    "not_runtime_tested": [
+      "Greek/Athenians blocked by unownedDLC; native decoder validation only",
+      "Other ChronicleDLC styles",
+      "UHD",
+      "Snow",
+      "Multiplayer",
+      "Allplayercolors",
+      "Repair",
+      "Everyanimationframe"
+    ],
+    "game_closed_after_qa": true,
+    "original_mod_enabled_flags_restored": true,
+    "restoration_mismatches": 0,
+    "final_candidate_left_disabled": true
+  },
+  "known_limits": [
+    "Original fire attachment positions can float",
+    "Original construction scaffolds unchanged",
+    "SpecialNorse longhouses excluded",
+    "No DAT/collision/pathing/game-rule modifications",
+    "Native color/shadow re-encoding is lossy"
+  ]
+}
