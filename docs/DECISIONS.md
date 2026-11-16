@@ -14,11 +14,11 @@
 | Private GitHub | Review source/specifications without public release of game-derived artwork. |
 
 ## Important exploration results
-- Old Dark house was 121��84 px and looked too flat. Initial 10% revision preceded final 110 px target.
+- Old Dark house was 121 -> 84 px and looked too flat. Initial 10% revision preceded final 110 px target.
 - Pure rigid30 crossed traced footlines in inspected Feudal/Castle shapes.
 - New Hybrid candidates reduce the roof itself more and move it less than the old delivered lifecycle art, preserving more visible wall despite similar total height.
 - A roof-only constant-drop mesh crossed fixed eaves at 110 px for inspected Feudal/Castle variants. Some triangles reversed orientation.
-- That failure was over-described as ��impossible�� and corrected: it demonstrates a limitation of tested mapping constraints, not every possible roof redesign.
+- That failure was over-described as "impossible" and corrected: it demonstrates a limitation of tested mapping constraints, not every possible roof redesign.
 - Roof-Flatten alternatives remain research, not the delivered v0.2 recipe.
 
 ## Research reference
