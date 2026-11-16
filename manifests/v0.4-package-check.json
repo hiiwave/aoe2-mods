@@ -1,0 +1,17 @@
+{
+  "graphic_count": 108,
+  "all_zip_graphic_hashes_match": true,
+  "zip_integrity": true,
+  "packages": [
+    {
+      "file": "hiiwave-Short-Houses-AllStyles-110-v0.4.zip",
+      "bytes": 83092697,
+      "sha256": "4dc274d1a5de184d104b0aedc0fa7237b943d759ebe10a4ede6af58c734b9ca2"
+    },
+    {
+      "file": "hiiwave-Short-Houses-v0.4-Game-Evidence.zip",
+      "bytes": 9961787,
+      "sha256": "278e568ce9106887ad2d0487e7abcde4899d451f9bcd522fb694430379fb8c0c"
+    }
+  ]
+}
