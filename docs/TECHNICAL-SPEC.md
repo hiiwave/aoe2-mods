@@ -1,7 +1,7 @@
 # Technical specification / lightweight architecture
 
 ## Data flow
-Lawful local game SLD files �� bounded decoder �� selected original frame �� age-specific 2D inverse warp �� aligned main / shadow / damage / player layers �� regenerated outline mask �� native SLD writer �� readback validation �� isolated local-mod folder �� ZIP.
+Lawful local game SLD files -> bounded decoder -> selected original frame -> age-specific 2D inverse warp -> aligned main / shadow / damage / player layers -> regenerated outline mask -> native SLD writer -> readback validation -> isolated local-mod folder -> ZIP.
 
 No service, backend or database is required. The architecture is an offline asset build pipeline. Current profiles are hand-traced, not automatically generalizable to arbitrary architecture.
 
@@ -10,15 +10,29 @@ Height means the decoded main RGBA layer's nontransparent bounding-box height, e
 
 Image y increases downward. Variants in documents are 1-based; source frame index is variant minus one. Keep this conversion explicit.
 
-For each x, t(x) is a traced roof/wall seam and b(x) a traced ground/foot line. These are piecewise-linear estimates, not reconstructed 3D geometry.
+For each horizontal coordinate $x$, $t(x)$ is a traced roof/wall seam and $b(x)$ a traced ground/foot line. These are piecewise-linear estimates, not reconstructed 3D geometry.
 
 ## Method names
 **Rigid Roof-Shift:** translate the roof downward without flattening it; compress the wall band to meet the fixed ground. It fails aesthetically/geometrically when the translated roof consumes the wall or crosses the foot line.
 
-**Roof-Shift Hybrid:** vertically compress roof around anchor a by k, then translate downward by d. New seam n(x)=a+k(t(x)-a)+d. Inverse map:
-- roof: source_y = a + (output_y-a-d)/k
-- wall: source_y = t(x)+(output_y-n(x))*(b(x)-t(x))/(b(x)-n(x))
-- ground: unchanged
+**Roof-Shift Hybrid:** vertically compress the roof around anchor $a$ by scale $k>0$, then translate it downward by $d$. Let $y$ denote an output-image coordinate and $y_s$ the corresponding source coordinate. The transformed seam is:
+
+$$
+n(x)=a+k\bigl(t(x)-a\bigr)+d.
+$$
+
+Provided $n(x)<b(x)$, use this inverse map in the active warped region:
+
+$$
+y_s(x,y)=
+\begin{cases}
+a+\dfrac{y-a-d}{k}, & y<n(x),\\[6pt]
+t(x)+\dfrac{(y-n(x))(b(x)-t(x))}{b(x)-n(x)}, & n(x)\le y<b(x),\\[6pt]
+y, & y\ge b(x).
+\end{cases}
+$$
+
+The roof formula inverts the scale and translation. The wall formula maps the new seam back to the original seam while fixing the foot line: at $y=n(x)$ it gives $y_s=t(x)$, and at $y=b(x)$ it gives $y_s=b(x)$. Outside the profile's active region, coordinates remain unchanged.
 
 Apply nearest-pixel sampling and appropriate region/cutoff rules consistently to aligned layers. Rebuild the outline mask from transformed main alpha. These coefficients are not equivalent to the total-house reduction.
 
@@ -28,7 +42,7 @@ Apply nearest-pixel sampling and appropriate region/cutoff rules consistently to
 | Age / selected variant | Roof scale k | Downward shift d | Anchor y |
 |---|---:|---:|---:|
 | Dark 2 | 0.90 | 3.0 px | 133 |
-| Feudal 2 | 1 - 15.5 / 93 ? 0.833333 | 29.0 px | 181 |
+| Feudal 2 | $1-\frac{15.5}{93}\approx 0.833333$ | 29.0 px | 181 |
 | Castle 2 | 0.70 | 16.6 px | 183 |
 
 Profile control points and sampling details are in src/build_trial.py. Dark leaves the shadow unchanged; Feudal and Castle use the aligned historical transforms. The visible output must be measured after encoding, not inferred from these parameters.
