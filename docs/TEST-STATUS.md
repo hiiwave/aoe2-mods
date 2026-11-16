@@ -32,7 +32,7 @@ These are recorded historical tests, not new independent reruns by the documenta
 2. Verify blue/red and additional player colors.
 3. Same camera/zoom, flat ground and slope, single house and adjacent rows.
 4. Walk a villager through a known gap: distinguish geometric passage from visual visibility.
-5. After lifecycle adaptation, inspect construction��standing, HP steps, repair, initial collapse and final rubble without shape/height pop.
+5. After lifecycle adaptation, inspect construction -> standing, HP steps, repair, initial collapse and final rubble without shape/height pop.
 6. Snow/UHD and actual multiplayer remain separately marked unverified until run.
 
 ## Release checklist
