@@ -120,11 +120,17 @@ H(s)=B-\min_i\{sv_i+(1-s)g_i\}.
 
 ![Original house screenshot with 35 control points and the height calibration curve](images/historical-35-point-mesh.png)
 
-The actual historical house image above contains **35 manually placed points, indexed 0-34**, a triangulated mesh, and its height-versus-scale calibration. It comes from the original screenshot experiment, not the current 110 px native-sprite pipeline. The model combines observed image points with assumed ground coordinates $g_i$ and Delaunay triangulation; adding points constrains the chosen mesh but does not resolve unknown depth. The source measurements contain 35 entries. This is an annotated asset study, not a before/after gameplay test.
+The historical screenshot model above uses **35 manual points (0-34)**, assumed ground coordinates $g_i$ and Delaunay triangulation. Its curve calibrates this particular mesh; more points constrain the model but do not resolve unknown depth. Current production profiles appear in Section 3.
 
 Its visible reduction is $1-H(s)/H(1)$, not $1-s$. Its example $s\approx0.4923$ was a mesh-specific calibration, **not** the calibration for the rigid or hybrid methods below. The function can have corners when the highest landmark changes.
 
 ## 3. Join a roof to a fixed ground line
+
+![Native source and encoded 110 px houses with their production control profiles](images/production-control-profiles.png)
+
+**Native 2/2/2 profiles:** left source, right encoded 110 px. Cyan is the source seam; orange its transformed position; green the fixed foot. Seam/foot point counts are Dark 4/6, Feudal 8/7, Castle 9/9. Each pair uses the same crop and scale; scale varies between ages. [Exact profiles and asset hashes](images/production-control-profiles.json).
+
+These are the actual production polylines, not the historical 35-point triangle mesh. The boundaries are manually specified; interpolation and inverse sampling are computed by the builder.
 
 In image space, trace a roof/wall seam $t(u)$ and foot line $\beta(u)$, with:
 
