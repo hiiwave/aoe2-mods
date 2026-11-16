@@ -1,0 +1,37 @@
+{
+  "method": "Roof-Shift Hybrid",
+  "selection": "2/2/2",
+  "intact_only": true,
+  "assets": [
+    {
+      "file": "b_dark_house_age1_x1.sld",
+      "source_sha256": "9549445145cac24e62d0a67d0657ff730725516ac4ac2545d6b3ab945c4129d7",
+      "sha256": "6c918cfe6170329020a83b5bf43b8a059486a8a8b9b5eb558c89becc6ee06232",
+      "matches_delivered_trial": true,
+      "frames": 3,
+      "height": 110,
+      "outline_match": true,
+      "slots_identical": true
+    },
+    {
+      "file": "b_west_house_age2_x1.sld",
+      "source_sha256": "0ad890ee5672e278a2718b11d9307daf42801c5df2404ab6768e708c46a1d981",
+      "sha256": "6ab96977877b8ea6da3cd1ad3a09c89efa4232d90962b13f0e36c7bc224ad629",
+      "matches_delivered_trial": true,
+      "frames": 3,
+      "height": 110,
+      "outline_match": true,
+      "slots_identical": true
+    },
+    {
+      "file": "b_west_house_age3_x1.sld",
+      "source_sha256": "61c945bd722790ffaa96512dbc37b0a26b551f25285eea69bc0150faf4c52a68",
+      "sha256": "ffa73dd259e81a636a9d02c53a3890eaebf7d863233ae8a987f369e4ea2749a8",
+      "matches_delivered_trial": true,
+      "frames": 3,
+      "height": 110,
+      "outline_match": true,
+      "slots_identical": true
+    }
+  ]
+}

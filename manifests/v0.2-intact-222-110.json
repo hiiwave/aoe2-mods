@@ -1,0 +1,35 @@
+{
+  "author": "hiiwave",
+  "version": "0.2-intact-trial",
+  "method": "Roof-Shift Hybrid (left column)",
+  "selection": "2/2/2",
+  "target_main_alpha_height": 110,
+  "no_gameplay_data": true,
+  "intact_only": true,
+  "assets": [
+    {
+      "file": "b_dark_house_age1_x1.sld",
+      "sha256": "6c918cfe6170329020a83b5bf43b8a059486a8a8b9b5eb558c89becc6ee06232",
+      "height": 110,
+      "frames": 3,
+      "all_three_variations_identical": true,
+      "native_layers_and_outline_checked": true
+    },
+    {
+      "file": "b_west_house_age2_x1.sld",
+      "sha256": "6ab96977877b8ea6da3cd1ad3a09c89efa4232d90962b13f0e36c7bc224ad629",
+      "height": 110,
+      "frames": 3,
+      "all_three_variations_identical": true,
+      "native_layers_and_outline_checked": true
+    },
+    {
+      "file": "b_west_house_age3_x1.sld",
+      "sha256": "ffa73dd259e81a636a9d02c53a3890eaebf7d863233ae8a987f369e4ea2749a8",
+      "height": 110,
+      "frames": 3,
+      "all_three_variations_identical": true,
+      "native_layers_and_outline_checked": true
+    }
+  ]
+}

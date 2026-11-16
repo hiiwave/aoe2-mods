@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+build/
+inputs/
+*.sld
+*.smx
+*.drs
+*.dat
+*.zip
+*.png
+*.jpg
+.env*
+
