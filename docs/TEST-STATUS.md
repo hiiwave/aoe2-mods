@@ -41,3 +41,11 @@ Record source game version and hashes, selected source frames, exact parameters,
 
 ## Owner acceptance after delivery
 The owner subsequently reported that actual play looked fine and authorized completing remaining Western lifecycle art, then expanding to all civilizations. This is owner-reported acceptance of the intact trial, not an independently observed test of damage/destruction or universal compatibility. The earlier pre-delivery status above remains historically accurate.
+
+## All-style candidate selection: authorized QA plan
+
+Status: in progress; this section specifies the agreed procedure, not a claim that all styles have passed.
+
+For each architecture style, generate multiple transformation-parameter candidates at the same target height. Keep source variant, pixel scale and framing consistent within each comparison. Present candidates with neutral IDs to an independent visual reviewer, hiding parameter choices and the proposed favorite. Judge roof/wall proportions, recognizable doors and windows, silhouette, ground contact and likely gap readability. Use practical visual judgment rather than a parameter score alone.
+
+Apply objective guardrails before selection: target height after native encoding/readback; positive, nonfolding roof/wall mapping with usable wall bands; fixed ground/hotspot placement; aligned masks/player color; valid native files. Reject technical failures even when a small preview looks attractive. A visually preferred candidate must still pass lifecycle and in-game checks before release. Record candidate parameters, reviewer recommendation, final choice and actual test results separately.
