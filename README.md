@@ -8,6 +8,7 @@ Private AoE2 DE graphics-mod project. Author: **hiiwave**.
 This is **not** the earlier v0.1 lifecycle package. v0.2 changes intact houses only. Its nine static frames passed decoder, height, outline and ZIP checks. It was **not game-tested before delivery**, but the owner subsequently reported successful real-play testing and accepted the trial. Old v0.1 had different shapes/proportions and recorded controlled lifecycle tests.
 
 ## Review documents
+- [Final v0.4 in-game gallery: matched gaps and 4v4 Arabia](docs/GAMEPLAY-GALLERY.md)
 - [PRD: purpose, scope and acceptance](docs/PRD.md)
 - [Technical specification and architecture](docs/TECHNICAL-SPEC.md)
 - [Mathematical derivation and conceptual diagrams](docs/MATHEMATICS.md)
