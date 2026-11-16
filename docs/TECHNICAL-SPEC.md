@@ -17,21 +17,30 @@ For each horizontal coordinate $x$, $t(x)$ is a traced roof/wall seam and $b(x)$
 ## Method names
 **Rigid Roof-Shift:** translate the roof downward without flattening it; compress the wall band to meet the fixed ground. It fails aesthetically/geometrically when the translated roof consumes the wall or crosses the foot line.
 
-**Roof-Shift Hybrid:** vertically compress the roof around anchor $a$ by scale $k>0$, then translate it downward by $d$. Let $y$ denote an output-image coordinate and $y_s$ the corresponding source coordinate. The transformed seam is:
+**Roof-Shift Hybrid:** vertically compress the roof around anchor $a$ by scale $k\gt 0$, then translate it downward by $d$. Let $y$ denote an output-image coordinate and $y_s$ the corresponding source coordinate. The transformed seam is:
 
 ```math
 n(x)=a+k\bigl(t(x)-a\bigr)+d.
 ```
 
-Provided $n(x)<b(x)$, use this inverse map in the active warped region:
+Provided $n(x)\lt b(x)$, the inverse map has three branches in the active warped region.
+
+Roof branch, for $y\lt n(x)$:
 
 ```math
-y_s(x,y)=
-\begin{cases}
-a+\dfrac{y-a-d}{k}, & y<n(x),\\[6pt]
-t(x)+\dfrac{(y-n(x))(b(x)-t(x))}{b(x)-n(x)}, & n(x)\le y<b(x),\\[6pt]
-y, & y\ge b(x).
-\end{cases}
+y_s=a+\frac{y-a-d}{k}.
+```
+
+Wall branch, for $n(x)\le y\lt b(x)$:
+
+```math
+y_s=t(x)+\frac{(y-n(x))(b(x)-t(x))}{b(x)-n(x)}.
+```
+
+Ground branch, for $y\ge b(x)$:
+
+```math
+y_s=y.
 ```
 
 The roof formula inverts the scale and translation. The wall formula maps the new seam back to the original seam while fixing the foot line: at $y=n(x)$ it gives $y_s=t(x)$, and at $y=b(x)$ it gives $y_s=b(x)$. Outside the profile's active region, coordinates remain unchanged.
