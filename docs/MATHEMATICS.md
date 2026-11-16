@@ -1,20 +1,34 @@
-# Mathematics of shortening a house sprite
+# Shortening isometric house sprites: geometry, constraints and implementation
 
-This page integrates the earlier lecture and distinguishes its **historical screenshot experiment** from the **current native-sprite implementation**. It does not recover the game's 3D geometry from a screenshot. See [Technical specification](TECHNICAL-SPEC.md) for delivered parameters and [Test status](TEST-STATUS.md) for evidence.
+## Purpose and reading guide
 
-## Conceptual figures
+This report derives image-space transformations that lower a house silhouette while keeping its ground footprint fixed. The practical objective is to reveal space behind buildings without compressing doors and walls beyond recognition. It explains why a rigid roof shift can fail, how Roof-Shift Hybrid distributes the shortening, and how the continuous model becomes a raster operation.
 
-![Illustrative comparison of roof transformations](images/methods-concept.svg)
+No earlier report is required. Sections 1-2 define the measurements and projection assumptions; Sections 3-7 derive the transformation, inverse sampler and validity constraints; Sections 8-9 distinguish an alternative experiment from the delivered implementation. See [Technical specification](TECHNICAL-SPEC.md) for build parameters and [Test status](TEST-STATUS.md) for verification evidence.
 
-![Illustrative roof, seam and fixed-foot coordinate map](images/coordinate-map.svg)
+**Two datasets must remain distinct.** The worked geometric example is a historical, manually annotated house screenshot with a 154 px landmark height. The delivered native-sprite trial instead targets a 110 px visible main-alpha bounding box. A screenshot measurement is not a native sprite measurement. Neither model recovers the game's true 3D geometry from one image.
 
-These are explanatory vector diagrams, **not gameplay screenshots or measured asset previews**. Their sample $k=0.60$, $d=30$ px and seam/anchor at 200 are deliberately illustrative, not the production 110 px calibration.
+### Notation and assumptions
+
+| Symbol | Meaning |
+|---|---|
+| $(x,y,z)$ | Hypothetical world coordinates; $z$ increases upward |
+| $(u,v)$ | Source screen coordinates; rightward/downward positive |
+| $w$ | Destination vertical screen coordinate |
+| $a,b,c$ | Positive projection coefficients, not warp parameters |
+| $v_0,B,H$ | Original top, chosen fixed bottom, and landmark height |
+| $t(u),\\beta(u)$ | Traced roof/wall seam and fixed foot line |
+| $q(u),L(u)$ | Transformed seam and original wall-band height |
+| $A,k,d$ | Roof-warp anchor, vertical scale and downward translation |
+| $\\lambda(u)$ | Remaining wall-height fraction |
+
+All image-coordinate lengths are pixels. The warp leaves horizontal position unchanged. Within each active column, the roof lies above the seam and the wall lies between seam and foot; these manually supplied regions must be meaningful for the depicted building. Ground remains fixed. Positive scale and noncollapsed wall bands are required. Native code uses different coordinate names, reconciled in Section 9.
 
 ## 1. Three meanings of height
 
 Keep separate: world height; screen distance between chosen landmarks; and decoded main-alpha bounding-box height.
 
-The lecture chose screen top $v_0=75$ and fixed front-ground reference $B=229$:
+The historical screenshot study chose screen top $v_0=75$ and fixed front-ground reference $B=229$:
 
 ```math
 H=B-v_0=154.
@@ -82,7 +96,7 @@ v'=g-csz=g+s(v-g)=sv+(1-s)g.
 
 Ground points remain fixed. But $g$ depends on surface depth; it is not generally one universal ground line per screen column. Uniformly squashing the sprite also squashes its projected ground footprint. More guessed landmarks do not recover missing depth.
 
-The lecture's assumed-depth mesh used:
+For an assumed-depth landmark mesh, its visible height is:
 
 ```math
 H(s)=B-\min_i\{sv_i+(1-s)g_i\}.
@@ -155,6 +169,15 @@ The rigid30 image was a diagnostic failure, not valid finished art.
 
 ## 5. Roof-Shift Hybrid
 
+### Illustrative transformation diagrams
+
+![Illustrative comparison of roof transformations](images/methods-concept.svg)
+
+![Illustrative roof, seam and fixed-foot coordinate map](images/coordinate-map.svg)
+
+These are explanatory vector diagrams, **not gameplay screenshots or measured asset previews**. Their sample $k=0.60$, $d=30$ px and seam/anchor at 200 are deliberately illustrative, not the production 110 px calibration.
+
+
 Compress the roof vertically about anchor $A$ by $k$, then translate it by $d$:
 
 ```math
@@ -183,7 +206,7 @@ For $A\gt v_0$:
 k=1-\frac{D-d}{A-v_0}.
 ```
 
-The lecture used $D=46.2$, $d=30.8$, $A=181$ and $v_0=75$:
+The worked screenshot example uses $D=46.2$, $d=30.8$, $A=181$ and $v_0=75$:
 
 ```math
 k=1-\frac{15.4}{106}\approx0.854717,\qquad C\approx57.096226.
@@ -271,13 +294,13 @@ v'=t(u)+k(v-t(u))
 
 for roof pixels. It fixes the seam, but varying $t(u)$ can bend a formerly straight ridge. Piecewise-affine meshes can constrain edges, yet moving a ridge below neighboring fixed eaves may invert triangles.
 
-In the separate later Feudal2 Roof-Flatten experiment (not a measurement from the lecture or the delivered build script), the tested equal-drop mesh needed a 45 px drop to change 155 into 110 px. One ridge vertex moved from 126 to 171, below its fixed eave at 153, folding that mesh.
+In the separate later Feudal2 Roof-Flatten experiment (not a measurement from the screenshot study above or the delivered build script), the tested equal-drop mesh needed a 45 px drop to change 155 into 110 px. One ridge vertex moved from 126 to 171, below its fixed eave at 153, folding that mesh.
 
 **This is a failure of the tested constraints, not a theorem that 110 px Roof-Flatten is impossible.** Different ridge displacements, mesh topology or roof redesign may work. If walls are compressed too, call it combined/hybrid rather than pure Roof-Flatten.
 
-## 9. Lecture notation versus native implementation
+## 9. Mathematical notation versus native implementation
 
-| Lecture | Technical spec / code |
+| This report | Technical spec / code |
 |---|---|
 | horizontal $u$ | $x$, array column |
 | vertical $v$ | $y$, array row |
@@ -287,7 +310,7 @@ In the separate later Feudal2 Roof-Flatten experiment (not a measurement from th
 | anchor $A$ | anchor $a$ |
 | translation $d$ | d |
 
-The current trial's 110 px main-alpha target was calibrated on native sprites, not by reusing the lecture's 30% coefficients:
+The current trial's 110 px main-alpha target was calibrated on native sprites, not by reusing the screenshot example's 30% coefficients:
 
 | Age / variant | Roof scale | Roof shift | Anchor |
 |---|---:|---:|---:|
@@ -297,8 +320,8 @@ The current trial's 110 px main-alpha target was calibrated on native sprites, n
 
 Measure encoded/read-back height, masks and hashes after building. Integer sampling, visibility masks and block coding make symbolic height estimates insufficient.
 
-## Source and limits
+## Provenance and reproducibility limits
 
-Integrated from the complete 10-page desktop lecture *Shortening a House Sprite: Projection, rigid roofs, and a hybrid warp*, emailed on 2026-11-16 UTC, then checked against the native implementation. Original PDF SHA256: a97ac6e3ef22435f79f8d082399defd6e3e18f7913e595c684c89ae1a3810f5a.
+The historical worked example and derivations were checked against the complete 10-page desktop report *Shortening a House Sprite: Projection, rigid roofs, and a hybrid warp*, emailed on 2026-11-16 UTC, then checked against the native implementation. Original PDF SHA256: a97ac6e3ef22435f79f8d082399defd6e3e18f7913e595c684c89ae1a3810f5a.
 
-The PDF's figures came from a single screenshot experiment, with manually selected coordinates; it did not claim automatic segmentation or a deployed mod. Relevant derivations are integrated here; the PDF itself is not uploaded. Historical screenshot numbers and current sprite measurements remain distinct.
+That source used one manually annotated screenshot, not automatic segmentation or a deployed mod. The definitions and derivations needed to follow this report are given above; the earlier PDF is not a prerequisite and is not uploaded. Historical screenshot numbers and current sprite measurements remain distinct.
