@@ -10,6 +10,7 @@ This is **not** the earlier v0.1 lifecycle package. v0.2 changes intact houses o
 ## Review documents
 - [PRD: purpose, scope and acceptance](docs/PRD.md)
 - [Technical specification and architecture](docs/TECHNICAL-SPEC.md)
+- [Mathematical derivation and conceptual diagrams](docs/MATHEMATICS.md)
 - [Decisions and alternatives](docs/DECISIONS.md)
 - [Versions and test evidence](docs/TEST-STATUS.md)
 - [Build and installation](docs/BUILD.md)
@@ -22,5 +23,5 @@ This is **not** the earlier v0.1 lifecycle package. v0.2 changes intact houses o
 - Shared default Dark Age graphics affect more civilizations than the Western set.
 - UHD, snow, all colors, repair progression and actual multiplayer compatibility are unverified.
 
-The repository holds authored source, specifications and hashes. Original game graphics and generated image/mod binaries are deliberately excluded. A lawful local game installation is required to rebuild. The portable rebuild reproduced all three delivered sprite hashes exactly; see [rebuild evidence](docs/REBUILD.md). ZIP metadata/text differ, so only sprite-byte equivalence is claimed.
+The repository holds authored source, specifications and hashes. Raw game graphics and generated mod binaries are deliberately excluded; curated documentation diagrams and owner-authorized visual evidence are handled separately under the rights policy. A lawful local game installation is required to rebuild. The portable rebuild reproduced all three delivered sprite hashes exactly; see [rebuild evidence](docs/REBUILD.md). ZIP metadata/text differ, so only sprite-byte equivalence is claimed.
 
