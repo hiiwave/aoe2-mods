@@ -24,8 +24,8 @@ The portable wrapper is new; see docs/REBUILD-RESULT.json for its actual local v
 4. Restart the game to clear cached graphics.
 5. To revert, disable the trial and re-enable the prior mod, then restart.
 
-Use Mods �� Open Directory to locate the active profile. Do not copy a development machine's profile identifier.
+Use Mods  ->  Open Directory to locate the active profile. Do not copy a development machine's profile identifier.
 
 ## Future lifecycle
-Regenerate three destruction and three rubble assets using the chosen source variant and matched transform. Reuse the existing codec rather than drawing hundreds of frames manually. Inspect masks/color and sample animation continuity; then run controlled live tests. Previous estimate of 45�V90 minutes was a rough engineering estimate, not a guarantee or authorization to skip QA.
+Regenerate three destruction and three rubble assets using the chosen source variant and matched transform. Reuse the existing codec rather than drawing hundreds of frames manually. Inspect masks/color and sample animation continuity; then run controlled live tests. Previous estimate of 45-90 minutes was a rough engineering estimate, not a guarantee or authorization to skip QA.
 
