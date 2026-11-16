@@ -1,6 +1,16 @@
 # Versions and evidence
 
-## v0.2-intact-222-110 (current delivered trial)
+## v0.4 (current packaged release)
+
+108 SLDs: 36 intact at 110 px, 36 destruction, 36 rubble; 17 standard-house architecture sets. Native lifecycle decoding and mask checks passed. All 108 installed files matched the final manifest, and final ZIP integrity/asset hashes passed.
+
+Runtime sampling covered seven architecture sets through 4v4 Arabia and controlled fixtures. Western, Andean, Mediterranean, Central Asian and East Asian lifecycle examples passed sampled damage/collapse/rubble checks. Western and East Asian matched gap tests preserved open/closed passage while reducing visual occlusion. No release blocker was observed in these samples.
+
+Greek runtime testing was blocked by an unowned DLC. Other untested Chronicles styles have native checks only. UHD, snow, repair, every player color, exhaustive animation frames and actual multiplayer are not fully verified. Scaffolding and fire attachment positions remain original.
+
+Authoritative scope: [QA summary](../manifests/v0.4-qa-summary.json), [asset manifest](../manifests/v0.4-allstyles.json), [archive verification](../manifests/v0.4-package-check.json), [gameplay evidence](GAMEPLAY-GALLERY.md). Earlier sections below are historical records, not the current release status.
+
+## v0.2-intact-222-110 (historical delivered trial)
 Selected 2/2/2; 110 px; Roof-Shift Hybrid. Author hiiwave.
 
 Passed before delivery:
@@ -27,7 +37,7 @@ Historical controlled QA records report:
 
 These are recorded historical tests, not new independent reruns by the documentation pass.
 
-## Required next game checks
+## Historical v0.2 follow-up checklist
 1. Install this trial alone; restart and inspect all ages.
 2. Verify blue/red and additional player colors.
 3. Same camera/zoom, flat ground and slope, single house and adjacent rows.
@@ -44,7 +54,7 @@ The owner subsequently reported that actual play looked fine and authorized comp
 
 ## All-style candidate selection: authorized QA plan
 
-Status: in progress; this section specifies the agreed procedure, not a claim that all styles have passed.
+Status: candidate selection and sampled runtime QA completed for v0.4. The procedure below records the agreed plan. Each of 36 intact assets had three candidates and one independent cross-group reviewer; 25 profiles were retained and 11 changed. This was not multi-reviewer consensus, and runtime coverage was sampled rather than universal.
 
 For each architecture style, generate multiple transformation-parameter candidates at the same target height. Keep source variant, pixel scale and framing consistent within each comparison. Present candidates with neutral IDs to an independent visual reviewer, hiding parameter choices and the proposed favorite. Judge roof/wall proportions, recognizable doors and windows, silhouette, ground contact and likely gap readability. Use practical visual judgment rather than a parameter score alone.
 
