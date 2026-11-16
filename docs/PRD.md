@@ -39,3 +39,7 @@ No data mod. Do not fix floating flames by moving shared effects or changing gam
 
 ## Latest authorized follow-through
 After real-play testing, the owner reported no problem with the 2/2/2 110 px trial and requested completion of the remaining collapse/lifecycle states. Western completion is the first milestone; all remaining civilizations are then in scope. These are authorized work items, **not completed features**. Use the shortest-original default and exceptions policy while retaining graphics-only constraints and the accepted fire limitation. Record each architecture/age coverage rather than claiming all civilizations complete after a subset.
+
+
+## Architecture comparison sheets
+For each architecture style, present all three original house variants for each relevant age. Show shortened outputs only for selected variants that have actually been produced; leave unmade shortened cells blank. Do not fabricate or imply completed candidates. Keep common pixel scale, age/variant labels, source and target heights, method and version. Western remains 2/2/2. Imperial may be labelled as sharing Castle where verified.
