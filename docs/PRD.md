@@ -8,7 +8,7 @@ Tall isometric house roofs can hide gaps between buildings, especially on slopes
 ## Scope
 1. Western architecture houses: Feudal, Castle and Imperial (Castle/Imperial share art).
 2. Shared default Dark Age house asset is explicitly included, even though this affects other civilizations using it.
-3. Current prototype is normal-resolution, intact houses only. Damage/destruction work is deferred until the standing appearance is accepted.
+3. Delivered v0.2 prototype is normal-resolution, intact houses only. Its standing appearance is now owner-accepted; lifecycle completion and all-civilization houses are authorized next, not yet claimed complete.
 4. Author labels and public attribution use **hiiwave**, never a personal full name.
 5. User installs on their own PC; SER6 is a development/test machine, not the assumed user-test destination.
 
@@ -43,3 +43,6 @@ After real-play testing, the owner reported no problem with the 2/2/2 110 px tri
 
 ## Architecture comparison sheets
 For each architecture style, present all three original house variants for each relevant age. Show shortened outputs only for selected variants that have actually been produced; leave unmade shortened cells blank. Do not fabricate or imply completed candidates. Keep common pixel scale, age/variant labels, source and target heights, method and version. Western remains 2/2/2. Imperial may be labelled as sharing Castle where verified.
+
+## Future possibilities, not current scope
+Only after the owner reviews and likes the expanded house results should Town Centers, castles, military buildings or other building types be considered. Those are future possibilities, not authorized implementation work in this house expansion.
