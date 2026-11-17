@@ -1,0 +1,37 @@
+{
+  "match_id": "A4v4-20261116-01",
+  "source": "demo-A4v4-20261116-01/capture-index.json and QA.md",
+  "version": "v0.6 120px-cap demo, mod120 pass",
+  "verification": "Demo QA records 108 installed files matched the 120px manifest and only the intended house mod enabled. This is sampled visual evidence, not a new test of the later publishing metadata/package.",
+  "notes": "Fresh save loads; timing and camera are not pixel-perfect. AI chat/tooltips are part of unedited captures. No hidden-walkable-gap or pathfinding claim.",
+  "captures": [
+    {
+      "file": "A4v4-20261116-01-mod120-20m-malians.jpg",
+      "civilization": "Malians",
+      "age": "Castle",
+      "hud_time": "20:48",
+      "sha256": "0c6af5e52c5be138337647aa118e0102c4adf8dcd2542f4c3af78934b9a7e5aa"
+    },
+    {
+      "file": "A4v4-20261116-01-mod120-20m-turks.jpg",
+      "civilization": "Turks",
+      "age": "Feudal",
+      "hud_time": "21:05",
+      "sha256": "85e619550f04d24b6f792efb5059eaf978565fab849308bccfe9f6cdce5aaf4c"
+    },
+    {
+      "file": "A4v4-20261116-01-mod120-25m-malians.jpg",
+      "civilization": "Malians",
+      "age": "Castle",
+      "hud_time": "25:54",
+      "sha256": "a86bcf713e34af0ba477dc423bf048c7801a3ccbf0637b6916297f9245fa520b"
+    },
+    {
+      "file": "A4v4-20261116-01-mod120-25m-turks.jpg",
+      "civilization": "Turks",
+      "age": "Castle",
+      "hud_time": "26:06",
+      "sha256": "0f6db933e5e24ab9c941f9b9e484c5219bc4840cdaacdbc563af5e0d390f2dc4"
+    }
+  ]
+}
