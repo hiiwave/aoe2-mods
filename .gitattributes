@@ -2,3 +2,6 @@
 *.py text eol=lf
 *.md text eol=lf
 *.json text eol=lf
+
+# Preserve this original build evidence byte-for-byte.
+mods/low-profile-houses/manifests/0.6x-120px-build-snapshot.json -text

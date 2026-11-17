@@ -4,7 +4,7 @@
 
 The owner-selected [25-minute before/after](GAMEPLAY-GALLERY.md) is current in-game visual evidence. It shows original versus shortened houses, not exhaustive validation of all assets or lifecycle states.
 
-The repository still contains historical v0.2/v0.4 code, manifests and QA records. A current package manifest, matched hashes and complete current lifecycle QA record have not been imported here. Their absence is an evidence/documentation gap, not proof that the released mod lacks those assets. Do not relabel old results as current validation.
+The repository still contains historical v0.2/v0.4 code, manifests and QA records. The [120 px build snapshot and payload verification](../manifests/0.6x-120px-verification.md) now record 108 assets whose hashes match the local publishing payload and subscribed public mod. The snapshot’s native-check results are build-time evidence, not a new full runtime test. Complete current reproducible source and comprehensive lifecycle runtime QA remain separate gaps. Do not relabel old results as current validation.
 
 ## Historical v0.4 package (110 px)
 
