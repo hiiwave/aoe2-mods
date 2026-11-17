@@ -1,11 +1,17 @@
 # Technical specification / lightweight architecture
 
+## Current release boundary
+
+The current standard is **0.6x Beta**, with a **120 px upper bound**, starting from original graphics and leaving shorter houses unchanged. The name estimates above-ground height; it is not a uniform image-space scale. The equations below explain the method, while the numerical profile table and checked-in source files below are **historical v0.2 / 110 px examples**, not the current release configuration. The general seam/roof/wall equations also appear in the inspected 120 px builder; some Western assets dispatch to specialized protection rules.
+
+A full current configuration and package manifest are not yet checked in. Do not infer current lifecycle coverage or byte reproducibility from this historical implementation.
+
 ## Data flow
 Lawful local game SLD files -> bounded decoder -> selected original frame -> age-specific 2D inverse warp -> aligned main / shadow / damage / player layers -> regenerated outline mask -> native SLD writer -> readback validation -> isolated local-mod folder -> ZIP.
 
 No service, backend or database is required. The architecture is an offline asset build pipeline. Current profiles are hand-traced, not automatically generalizable to arbitrary architecture.
 
-Full derivations, historical screenshot examples and the link to the current 110 px implementation are in [MATHEMATICS.md](MATHEMATICS.md).
+Full derivations, historical screenshot examples and the historical 110 px implementation are in [MATHEMATICS.md](MATHEMATICS.md).
 
 ## Height and coordinates
 Height means the decoded main RGBA layer's nontransparent bounding-box height, excluding the separate shadow layer. Chimneys and visible ground details in the main image count. It is neither a world-space 3D height nor a uniform scale factor.
@@ -45,11 +51,11 @@ y_s=y.
 
 The roof formula inverts the scale and translation. The wall formula maps the new seam back to the original seam while fixing the foot line: at $y=n(x)$ it gives $y_s=t(x)$, and at $y=b(x)$ it gives $y_s=b(x)$. Outside the profile's active region, coordinates remain unchanged.
 
-Apply nearest-pixel sampling and appropriate region/cutoff rules consistently to aligned layers. Rebuild the outline mask from transformed main alpha. These coefficients are not equivalent to the total-house reduction.
+The inspected 120 px generic branch rounds to nearest-pixel sampling, makes out-of-bounds samples transparent, requires at least a 3 px wall band, preserves the separate shadow layer, and copies ground-region pixels unchanged. Western dispatches can apply additional region/cutoff rules. Rebuild the outline mask from transformed main alpha. These coefficients are not equivalent to the total-house reduction.
 
 **Roof-Flatten:** reduce roof pitch while retaining eaves and walls. Trials use per-column maps or piecewise-affine roof meshes. At aggressive targets, the tested fixed-eave meshes fold, but this is not a mathematical impossibility theorem. Redesigning ridge positions/topology can relax the constraint. Do not label a wall-compressing hybrid as pure Roof-Flatten.
 
-## Current delivered parameters
+## Historical v0.2 parameters (110 px)
 | Age / selected variant | Roof scale k | Downward shift d | Anchor y |
 |---|---:|---:|---:|
 | Dark 2 | 0.90 | 3.0 px | 133 |
@@ -58,14 +64,14 @@ Apply nearest-pixel sampling and appropriate region/cutoff rules consistently to
 
 Profile control points and sampling details are in src/build_trial.py. Dark leaves the shadow unchanged; Feudal and Castle use the aligned historical transforms. The visible output must be measured after encoding, not inferred from these parameters.
 
-## Native assets
+## Historical v0.2 native assets
 - b_dark_house_age1_x1.sld
 - b_west_house_age2_x1.sld
 - b_west_house_age3_x1.sld
 
 Each output has three repeated static frames. Main color, shadow, damage-related and player-color layers retain native representation; the writer is bounded to the inspected layer set. BC1/BC4 encoding is lossy. Alpha/outline equality does not prove color equality or correct engine rendering.
 
-## Lifecycle dependency
+## Historical lifecycle dependency (v0.1 to v0.2)
 Old v0.1 contains intact + destruction + rubble for each of three age groups (9 SLDs). New v0.2 has only 3 intact SLDs. Moving the new shape into a full lifecycle version requires regenerating the destruction animation and rubble from the selected variant and compatible warp. Approximately 100 unique destruction frames per age are replicated across three appearance groups.
 
 Damage shading and fire are primarily engine overlays; they do not require hand-drawing every HP state. Correct masks and actual progression still require verification. Generic scaffold art remains original. Old destruction files cannot simply be reused because the starting variant/proportion differs.

@@ -1,60 +1,61 @@
-# Low-Profile Houses
+# Low-Profile Houses - 0.6x (Beta)
 
-Private AoE2 DE graphics-mod project. Author: **hiiwave**.
+Author: **hiiwave**.
 
+## A clearer view, without flat foundations
 
-## Current direction
+Tall houses can hide units, terrain and small gaps in a wall. Low-Profile Houses lowers their silhouette while keeping recognizable architecture. This is a visual trade-off: clearer bases and consistent house shapes, rather than maximum original variety.
 
-The current beta uses a 120 px upper bound and is titled **Low-Profile Houses - 0.6x (Beta)**. Houses already below the target are not enlarged. The 0.6x label is an approximate above-ground height comparison, not a uniform screen-space scale for every building.
+![Original versus 0.6x Beta in a real game](docs/images/current-06x/live-25m-before-after.jpg)
 
-The implementation, manifests and verification evidence presently checked into this repository describe the earlier v0.2/v0.4 baselines below; they must not be mistaken for a complete reproducible build of the latest beta.
+*Around 25 minutes of gameplay. Left: original graphics. Right: 0.6x Beta. The comparison illustrates reduced obstruction, not changed collision or a newly passable route.*
 
-## Archived v0.4 baseline (110 px)
+## Current standard
 
-**17 standard-house architecture sets, 108 native SLD files:** 36 intact, 36 destruction and 36 rubble assets. Every selected intact sprite has a **110 px** visible main-alpha height. Roof-Shift Hybrid uses per-asset roof/wall control profiles, calibrated roof scaling and translation, and fixed ground contact. Source variants and parameter choices are asset-specific, not a universal 2/2/2 preset.
+- **120 px upper bound**, measured in the native standing-house main image. Houses at or below the target are not enlarged.
+- Transform from the **original assets**, not by enlarging the older 110 px output.
+- One selected variant per architecture and age, repeated across the normal variation slots for a consistent look. Selections are asset-specific.
+- **0.6x is an approximate above-ground height description**, not a universal 0.6 multiplier on image coordinates or an exact recovered 3D measurement.
+- Graphics only. Ground footprints, collision and gameplay data remain unchanged. The sprite selection outline is a separate visual concern from ground collision.
 
-The package includes standard-house assets mapped across 62 installed non-Gaia civilization records, including Chronicles assets. Special Norse longhouses are excluded. This describes asset coverage, **not exhaustive in-game verification of every civilization**.
+## Install
 
-Three same-height candidates per intact asset received one independent cross-group blind visual review: 25 profiles were retained and 11 changed. This was a preference review, not multi-reviewer consensus.
+[Open the published mod on Age of Empires](https://www.ageofempires.com/mods/details/583664).
 
-### Verification
+## Method at a glance
 
-- All native lifecycle frames decoded; outline/mask checks passed.
-- The 108 installed graphic files matched the final manifest individually.
-- Final ZIP integrity and all 108 packaged asset hashes passed.
-- Sampled in-game rendering covered seven architecture sets, including a 4v4 Extreme AI Arabia match at 22–23 minutes.
-- Controlled damage/collapse/rubble tests covered Western, Andean, Mediterranean, Central Asian and East Asian examples.
-- Matched original/mod gap fixtures covered Western and East Asian Castle houses. Passability was unchanged; reduced roof occlusion improved visibility.
+Keep the ground fixed; shorten the roof and the wall band separately, with per-house parameters:
 
-No release blocker was found in the sampled coverage. Greek runtime testing was blocked by an unowned DLC; Greek and other untested Chronicles styles have native-file validation only.
+```math
+H_{\mathrm{target}}=\min(H_{\mathrm{original}},120\,\mathrm{px}),\qquad n(x)=a+k[t(x)-a]+d.
+```
 
-See the [in-game gallery](docs/GAMEPLAY-GALLERY.md), [exact QA coverage](manifests/v0.4-qa-summary.json), [asset hashes](manifests/v0.4-allstyles.json) and [archive checks](manifests/v0.4-package-check.json).
+Here $t(x)$ is the original roof/wall seam; $n(x)$ is the transformed seam. Roof scale $k$, shift $d$ and anchor $a$ vary by asset. Special cases protect details and ground contact; this is **not a uniform 0.6 image resize**.
 
-## Archived v0.4 installation and limits
+![World-coordinate projection schematic](docs/images/lecture-world-axes.svg)
 
-Disable other house-graphics mods and older short-house versions, enable v0.4, and restart the game. Keep the previous package for rollback. QA restored the original mod-enabled flags; the test installation was left disabled.
+*Coordinate illustration, not a sprite control mesh. [Transformation details](docs/TECHNICAL-SPEC.md) · [Mathematical derivation](docs/MATHEMATICS.md)*
 
-- Graphics only: no DAT, gameplay, population, collision or pathfinding changes.
-- Construction scaffolding remains original; fire can float at original attachment positions.
-- Native color/shadow recompression is lossy.
-- UHD, snow, repair, every player color, every animation frame and actual multiplayer remain unverified or not exhaustively tested.
-- Gap comparisons use matching geometry/camera/zoom, but different capture times and original randomized variants. They illustrate visibility, not a new passable route.
+## Using the beta
 
-## Review documents
+Enable only one house-height mod at a time; disable conflicting house-graphics mods and restart the game after changing them. Construction scaffolding and fire-effect positions remain original, so flames can appear above the shortened roof. Special Norse longhouses are excluded. Greek/Chronicles support is not an acceptance requirement for this competitive-gameplay project.
 
-- [Final v0.4 in-game gallery: matched gaps and 4v4 Arabia](docs/GAMEPLAY-GALLERY.md)
-- [PRD: purpose, scope and acceptance](docs/PRD.md)
-- [Technical specification and architecture](docs/TECHNICAL-SPEC.md)
-- [Mathematical derivation and control-point diagrams](docs/MATHEMATICS.md)
+The before/after above is current visual evidence, not exhaustive testing of every civilization, lifecycle state or player color. See [verification boundaries](docs/TEST-STATUS.md).
+
+## Documentation
+
+- [Current gameplay comparison](docs/GAMEPLAY-GALLERY.md)
+- [Product requirements](docs/PRD.md)
+- [Technical specification](docs/TECHNICAL-SPEC.md)
+- [Mathematics and annotated house diagrams](docs/MATHEMATICS.md)
 - [Decisions and alternatives](docs/DECISIONS.md)
-- [Versions and test evidence](docs/TEST-STATUS.md)
-- [Build and installation](docs/BUILD.md)
+- [Test status and evidence](docs/TEST-STATUS.md)
+- [Build scope and instructions](docs/BUILD.md)
+- [Historical 110 px baselines](docs/HISTORICAL-BASELINES.md)
 - [Rights and repository boundaries](docs/RIGHTS.md)
 
-## Historical reproducible baseline
+## Source versus release
 
-**v0.2-intact-222-110** was the earlier Dark / Western Feudal / Western Castle trial: source variants 2/2/2, 110 px, intact houses only. The owner reported successful real-play testing. Its three-sprite portable rebuild reproduced the original sprite hashes exactly; see [baseline rebuild evidence](docs/REBUILD.md). That evidence and `src/build_trial.py` concern v0.2, not a complete v0.4 rebuild.
+The checked-in builder reproduces the **historical v0.2 three-sprite 110 px trial**. The v0.4 manifests also document a historical 110 px package. Neither is a complete reproducible source export of the current 0.6x Beta. Current parameters, package manifests and lifecycle verification must be imported and checked before claiming that capability.
 
-The mathematical report's historical screenshot model and v0.2 control-profile examples explain the method; historical v0.4 coverage is defined by the v0.4 manifests above. Earlier v0.1/v0.2 lifecycle limitations do not describe v0.4's adapted destruction/rubble assets.
-
-The repository holds authored source, specifications, hashes and curated visual evidence. Raw game assets and mod binaries are excluded. A lawful local game installation is required to rebuild.
+Raw game assets and mod binaries are excluded from this repository. Rebuilding historical examples requires a lawful local game installation. [License](../../LICENSE) and [game-content notice](../../GAME-CONTENT-NOTICE.md).

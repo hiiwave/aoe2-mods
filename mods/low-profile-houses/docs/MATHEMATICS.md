@@ -1,12 +1,14 @@
 # Shortening isometric house sprites: geometry, constraints and implementation
 
+> **Release context:** the current standard is 0.6x Beta / a 120 px upper bound. Numerical 110 px examples and annotated control profiles in this report are historical teaching/build examples, not current release parameters. The 35-point diagram is an explanatory historical model, not a claim that every production house uses that mesh.
+
 ## Purpose and reading guide
 
 This report derives image-space transformations that lower a house silhouette while keeping its ground footprint fixed. The practical objective is to reveal space behind buildings without compressing doors and walls beyond recognition. It explains why a rigid roof shift can fail, how Roof-Shift Hybrid distributes the shortening, and how the continuous model becomes a raster operation.
 
-No earlier report is required. Sections 1-2 define the measurements and projection assumptions; Sections 3-7 derive the transformation, inverse sampler and validity constraints; Sections 8-9 distinguish an alternative experiment from the delivered implementation. See [Technical specification](TECHNICAL-SPEC.md) for build parameters and [Test status](TEST-STATUS.md) for verification evidence.
+No earlier report is required. Sections 1-2 define the measurements and projection assumptions; Sections 3-7 derive the transformation, inverse sampler and validity constraints; Sections 8-9 distinguish an alternative experiment from the historical v0.2 implementation. See [Technical specification](TECHNICAL-SPEC.md) for build parameters and [Test status](TEST-STATUS.md) for verification evidence.
 
-**Two datasets must remain distinct.** The worked geometric example is a historical, manually annotated house screenshot with a 154 px landmark height. The delivered native-sprite trial instead targets a 110 px visible main-alpha bounding box. A screenshot measurement is not a native sprite measurement. Neither model recovers the game's true 3D geometry from one image.
+**Two datasets must remain distinct.** The worked geometric example is a historical, manually annotated house screenshot with a 154 px landmark height. The historical v0.2 native-sprite trial instead targets a 110 px visible main-alpha bounding box. A screenshot measurement is not a native sprite measurement. Neither model recovers the game's true 3D geometry from one image.
 
 ### Notation and assumptions
 
@@ -40,7 +42,7 @@ A 30% reduction meant:
 H_{\mathrm{target}}=(1-0.30)154=107.8,\qquad v_0'=229-107.8=121.2.
 ```
 
-That excludes the screenshot selection border. It is **not** the native sprite-alpha definition. Our current trial measures the main layer's visible bounding-box height, excluding the separate shadow, and targets 110 px. Source heights for Dark2/Feudal2/Castle2 are 119/155/153 px. Thus:
+That excludes the screenshot selection border. It is **not** the native sprite-alpha definition. The historical v0.2 trial measures the main layer's visible bounding-box height, excluding the separate shadow, and targets 110 px. Source heights for Dark2/Feudal2/Castle2 are 119/155/153 px. Thus:
 
 ```math
 1-\frac{110}{119}\approx7.56\%,\qquad
@@ -120,7 +122,7 @@ H(s)=B-\min_i\{sv_i+(1-s)g_i\}.
 
 ![Original house screenshot with 35 control points and the height calibration curve](images/historical-35-point-mesh.png)
 
-The historical screenshot model above uses **35 manual points (0-34)**, assumed ground coordinates $g_i$ and Delaunay triangulation. Its curve calibrates this particular mesh; more points constrain the model but do not resolve unknown depth. Current production profiles appear in Section 3.
+The historical screenshot model above uses **35 manual points (0-34)**, assumed ground coordinates $g_i$ and Delaunay triangulation. Its curve calibrates this particular mesh; more points constrain the model but do not resolve unknown depth. Historical v0.2 production profiles appear in Section 3.
 
 Its visible reduction is $1-H(s)/H(1)$, not $1-s$. Its example $s\approx0.4923$ was a mesh-specific calibration, **not** the calibration for the rigid or hybrid methods below. The function can have corners when the highest landmark changes.
 
@@ -130,7 +132,7 @@ Its visible reduction is $1-H(s)/H(1)$, not $1-s$. Its example $s\approx0.4923$ 
 
 **Native 2/2/2 profiles:** left source, right encoded 110 px. Cyan is the source seam; orange its transformed position; green the fixed foot. Seam/foot point counts are Dark 4/6, Feudal 8/7, Castle 9/9. Each pair uses the same crop and scale; scale varies between ages. [Exact profiles and asset hashes](images/production-control-profiles.json).
 
-These are the actual production polylines, not the historical 35-point triangle mesh. The boundaries are manually specified; interpolation and inverse sampling are computed by the builder.
+These are the actual historical v0.2 production polylines, not the historical 35-point triangle mesh. The boundaries are manually specified; interpolation and inverse sampling are computed by the builder.
 
 In image space, trace a roof/wall seam $t(u)$ and foot line $\beta(u)$, with:
 
@@ -201,7 +203,7 @@ The rigid30 image was a diagnostic failure, not valid finished art.
 
 ![Illustrative roof, seam and fixed-foot coordinate map](images/coordinate-map.svg)
 
-These are explanatory vector diagrams, **not gameplay screenshots or measured asset previews**. Their sample $k=0.60$, $d=30$ px and seam/anchor at 200 are deliberately illustrative, not the production 110 px calibration.
+These are explanatory vector diagrams, **not gameplay screenshots or measured asset previews**. Their sample $k=0.60$, $d=30$ px and seam/anchor at 200 are deliberately illustrative, not the historical production 110 px calibration.
 
 
 Compress the roof vertically about anchor $A$ by $k$, then translate it by $d$:
@@ -338,7 +340,7 @@ In the separate later Feudal2 Roof-Flatten experiment (not a measurement from th
 | anchor $A$ | anchor $a$ |
 | translation $d$ | d |
 
-The current trial's 110 px main-alpha target was calibrated on native sprites, not by reusing the screenshot example's 30% coefficients:
+The historical v0.2 trial's 110 px main-alpha target was calibrated on native sprites, not by reusing the screenshot example's 30% coefficients:
 
 | Age / variant | Roof scale | Roof shift | Anchor |
 |---|---:|---:|---:|
@@ -352,4 +354,4 @@ Measure encoded/read-back height, masks and hashes after building. Integer sampl
 
 The historical worked example and derivations were checked against the complete 10-page desktop report *Shortening a House Sprite: Projection, rigid roofs, and a hybrid warp*, emailed on 2026-11-16 UTC, then checked against the native implementation. Original PDF SHA256: a97ac6e3ef22435f79f8d082399defd6e3e18f7913e595c684c89ae1a3810f5a.
 
-That source used one manually annotated screenshot, not automatic segmentation or a deployed mod. The definitions and derivations needed to follow this report are given above; the earlier PDF is not a prerequisite and is not uploaded. Historical screenshot numbers and current sprite measurements remain distinct.
+That source used one manually annotated screenshot, not automatic segmentation or a deployed mod. The definitions and derivations needed to follow this report are given above; the earlier PDF is not a prerequisite and is not uploaded. Historical screenshot numbers and historical native-sprite measurements remain distinct.

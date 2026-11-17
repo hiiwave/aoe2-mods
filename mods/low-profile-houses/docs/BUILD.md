@@ -1,5 +1,7 @@
 # Build and install
 
+> **Historical v0.2 / 110 px only.** These instructions and results do not rebuild or verify the current 0.6x Beta (120 px upper bound).
+
 ## Repository boundary
 Only authored source and documentation are stored here. Supply the three original SLD files from a lawful local AoE2 DE installation. Do not commit them.
 
@@ -28,6 +30,6 @@ The portable wrapper is new; see docs/REBUILD-RESULT.json for its actual local v
 
 Use Mods  ->  Open Directory to locate the active profile. Do not copy a development machine's profile identifier.
 
-## Future lifecycle
-Regenerate three destruction and three rubble assets using the chosen source variant and matched transform. Reuse the existing codec rather than drawing hundreds of frames manually. Inspect masks/color and sample animation continuity; then run controlled live tests. Previous estimate of 45-90 minutes was a rough engineering estimate, not a guarantee or authorization to skip QA.
+## Current release source gap
 
+These historical commands do not build the current 0.6x package. Do not treat the old lifecycle work estimates or prototype TODOs as a current release plan. Current source/profile import and verification should precede any claim of a complete rebuild.

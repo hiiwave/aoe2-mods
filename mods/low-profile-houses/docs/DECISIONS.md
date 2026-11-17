@@ -1,6 +1,18 @@
 # Decisions and rationale
 
-| Decision | Rationale / status |
+## Current decisions
+
+- 0.6x Beta / 120 px upper bound is the standard; shorter originals are not enlarged.
+- Start from original assets. Keep approximate above-ground height naming distinct from image-space pixel targets.
+- Retain the owner's variant choices and the graphics-only boundary.
+- Keep old screenshots, parameters and test records explicitly historical. Lead with current real-game before/after evidence.
+- Other building and transparency experiments are separate work, not part of the house release specification.
+
+## Historical decisions and experiments
+
+The record below describes earlier stages; references to 110 px, pending expansion and v0.2 do not override the current standard.
+
+| Decision | Historical rationale / status |
 |---|---|
 | Graphics-only, no data mod | User rejected data mods; retain normal visual-mod approach. |
 | Fire accepted | Actual Anne_HK flat-castle and all-age-TC tests also showed floating flames in sampled states. Accepted limitation, not proof no solution exists. |

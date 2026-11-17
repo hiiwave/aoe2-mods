@@ -1,48 +1,30 @@
-# Product requirements
+# Product requirements: 0.6x Beta
 
-Status: reviewable working specification, 2026-11-16. Author: hiiwave.
+Author: **hiiwave**. Current standard: **120 px upper bound**.
 
-## Problem and outcome
-Tall isometric house roofs can hide gaps between buildings, especially on slopes. Reduce visual obstruction while retaining a recognizable house and its original ground placement. The goal is better visibility, not a new collision model or a guarantee that every hidden gap becomes visible.
+## Purpose
 
-## Scope
-1. Western architecture houses: Feudal, Castle and Imperial (Castle/Imperial share art).
-2. Shared default Dark Age house asset is explicitly included, even though this affects other civilizations using it.
-3. Delivered v0.2 prototype is normal-resolution, intact houses only. Its standing appearance is now owner-accepted; lifecycle completion and all-civilization houses are authorized next, not yet claimed complete.
-4. Author labels and public attribution use **hiiwave**, never a personal full name.
-5. User installs on their own PC; SER6 is a development/test machine, not the assumed user-test destination.
+Make bases easier to read in competitive play without replacing houses with flat foundations. Preserve recognizable architectural character while exposing more nearby units, terrain and wall gaps. This is a visibility improvement, not a change to passability.
 
-## Current selection
-| Age | Source variation (1-based) | Source main height | Target | Method |
-|---|---:|---:|---:|---|
-| Dark | 2 | 119 px | 110 px | Roof-Shift Hybrid |
-| Feudal | 2 | 155 px | 110 px | Roof-Shift Hybrid |
-| Castle / Imperial | 2 | 153 px | 110 px | Roof-Shift Hybrid |
+## Current requirements
 
-This is the user's selected trial, even though visual review favored Feudal 3. Do not silently substitute the reviewer's choice.
+- Work from original game graphics. Do not rescale the former 110 px outputs.
+- Target 120 px for taller standard houses; do not enlarge shorter originals, including the shared 119 px Dark Age house.
+- Select a variant per architecture/age. Use the owner's reviewed selections, not a universal variant number or an unreviewed reviewer preference.
+- Repeat the selected shape across variation slots for consistency; document the loss of variety.
+- Keep ground placement, footprint, collision and game rules unchanged. Update visual outline/mask data consistently with the transformed sprite where applicable.
+- Preserve player-color/layer alignment; validate encoded assets and sample them in game. A valid file is not proof of correct rendering.
+- Present real, labelled before/after examples at comparable viewing scale. Do not present historical 110 px captures as current evidence.
+- Attribute the mod to hiiwave. Keep the source repository private until explicitly authorized otherwise.
 
-## Selection policy for later expansion
-Start with the shortest original variant per architecture/age to keep a consistent, scalable process. Prefer another variant only if the shortened result is materially clearer or better looking. Avoid mandatory exhaustive three-way experiments for every future civilization. Expansion was subsequently explicitly authorized; see latest follow-through below.
+## Scope and acceptance
 
-## Acceptance criteria
-- Full standing-house main alpha bounds are exactly 110 px high; width and hotspot retained.
-- Uniform shape across all three static variation slots in each selected age.
-- No rule/data files; no base-game overwrite.
-- Preserve visual ground position, player-color support and aligned native layers. Binary validity is not visual correctness.
-- Preview comparisons show original and candidate at common pixel scale, with explicit method, height and version labels.
-- User real-play assessment remains the strongest acceptance test for occlusion/readability.
-- Packaging changes alone or author metadata edits do not warrant repeated test requests.
+Standard houses across competitive architecture sets are the intended scope. Greek/Chronicles coverage is not a required acceptance gate; the special Norse longhouse is excluded. Exact delivered asset coverage must come from a current package manifest, not the historical v0.4 count.
 
-## Non-goals / accepted limits
-No data mod. Do not fix floating flames by moving shared effects or changing game data. No ranked/multiplayer compatibility promise without evidence. Construction scaffolding can remain original. A full lifecycle release is separate from this intact trial.
+Standing, damage, destruction and rubble evidence must identify the package tested. No claim of full current lifecycle verification follows from earlier-version tests. Existing gameplay screenshots establish sampled visual results only.
 
+Scaffolding and floating fire positions are accepted limitations. Separate transparency, tree and military-building experiments do not change this house beta's specification.
 
-## Latest authorized follow-through
-After real-play testing, the owner reported no problem with the 2/2/2 110 px trial and requested completion of the remaining collapse/lifecycle states. Western completion is the first milestone; all remaining civilizations are then in scope. These are authorized work items, **not completed features**. Use the shortest-original default and exceptions policy while retaining graphics-only constraints and the accepted fire limitation. Record each architecture/age coverage rather than claiming all civilizations complete after a subset.
+## Historical requirements
 
-
-## Architecture comparison sheets
-For each architecture style, present all three original house variants for each relevant age. Show shortened outputs only for selected variants that have actually been produced; leave unmade shortened cells blank. Do not fabricate or imply completed candidates. Keep common pixel scale, age/variant labels, source and target heights, method and version. Western remains 2/2/2. Imperial may be labelled as sharing Castle where verified.
-
-## Future possibilities, not current scope
-Only after the owner reviews and likes the expanded house results should Town Centers, castles, military buildings or other building types be considered. Those are future possibilities, not authorized implementation work in this house expansion.
+Earlier Western-only 2/2/2, intact-only and 110 px milestones are superseded as current requirements. See [historical baselines](HISTORICAL-BASELINES.md), [decisions](DECISIONS.md) and [versioned test records](TEST-STATUS.md) for their context. Earlier prose remains available in Git history.

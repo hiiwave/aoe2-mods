@@ -4,11 +4,11 @@ Age of Empires II: Definitive Edition mods by **hiiwave**.
 
 ## [Low-Profile Houses](mods/low-profile-houses/)
 
-Shorter houses make nearby units, terrain and wall gaps easier to see while retaining each architecture’s character.
-Graphics only: building footprints, collision and gameplay remain unchanged.
+Shorter houses reveal more of nearby units, terrain and wall gaps while retaining the game's architectural character.
+The current **0.6x Beta** uses a **120 px upper bound**. Graphics only: ground footprints, collision and gameplay data remain unchanged.
 
-![Low-Profile Houses in-game visibility example](mods/low-profile-houses/docs/images/runtime-v04/west-gap-v3-mod-result.jpg)
+![Before and after: Low-Profile Houses 0.6x Beta](mods/low-profile-houses/docs/images/current-06x/live-25m-before-after.jpg)
 
-*Illustrative screenshot from the earlier 110 px baseline.*
+*Real in-game comparison around 25 minutes: original houses on the left, 0.6x Beta on the right.*
 
-[Project details, technical notes and build instructions](mods/low-profile-houses/).
+[Details, screenshots and technical documentation](mods/low-profile-houses/).

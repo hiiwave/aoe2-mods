@@ -1,6 +1,12 @@
 # Versions and evidence
 
-## v0.4 (current packaged release)
+## Current: 0.6x Beta / 120 px upper bound
+
+The owner-selected [25-minute before/after](GAMEPLAY-GALLERY.md) is current in-game visual evidence. It shows original versus shortened houses, not exhaustive validation of all assets or lifecycle states.
+
+The repository still contains historical v0.2/v0.4 code, manifests and QA records. A current package manifest, matched hashes and complete current lifecycle QA record have not been imported here. Their absence is an evidence/documentation gap, not proof that the released mod lacks those assets. Do not relabel old results as current validation.
+
+## Historical v0.4 package (110 px)
 
 108 SLDs: 36 intact at 110 px, 36 destruction, 36 rubble; 17 standard-house architecture sets. Native lifecycle decoding and mask checks passed. All 108 installed files matched the final manifest, and final ZIP integrity/asset hashes passed.
 
@@ -8,7 +14,7 @@ Runtime sampling covered seven architecture sets through 4v4 Arabia and controll
 
 Greek runtime testing was blocked by an unowned DLC. Other untested Chronicles styles have native checks only. UHD, snow, repair, every player color, exhaustive animation frames and actual multiplayer are not fully verified. Scaffolding and fire attachment positions remain original.
 
-Authoritative scope: [QA summary](../manifests/v0.4-qa-summary.json), [asset manifest](../manifests/v0.4-allstyles.json), [archive verification](../manifests/v0.4-package-check.json), [gameplay evidence](GAMEPLAY-GALLERY.md). Earlier sections below are historical records, not the current release status.
+Historical v0.4 evidence: [QA summary](../manifests/v0.4-qa-summary.json), [asset manifest](../manifests/v0.4-allstyles.json), [archive verification](../manifests/v0.4-package-check.json), [historical gameplay evidence](HISTORICAL-GALLERY.md). Earlier sections below are historical records, not the current release status.
 
 ## v0.2-intact-222-110 (historical delivered trial)
 Selected 2/2/2; 110 px; Roof-Shift Hybrid. Author hiiwave.
