@@ -12,7 +12,7 @@ Tall houses can hide units, terrain and small gaps in a wall. Low-Profile Houses
 
 ## Current standard
 
-Current version: **`2611.1-beta.5`** (CalVer). **0.6x names the height treatment, not a version number.**
+Current version: **`2611.2-beta`** (CalVer). **0.6x names the height treatment, not a version number.**
 
 - **120 px upper bound**, measured in the native standing-house main image. Houses at or below the target are not enlarged.
 - One selected variant per architecture and age, repeated across the normal variation slots for a consistent look.
@@ -61,17 +61,19 @@ The roof moves and compresses; the wall meets it continuously; the ground stays 
 
 **This Castle profile:** $a=183$, $k\approx0.77$, $d\approx12.74$ px. Native main-alpha bounds change from $[95,248)$ to $[128,248)$: **153 → 120 px**. The measured bounds include visible ground details; 0.6x is not $k$, nor a uniform image resize.
 
-The renderer samples the inverse map at nearest source pixels, then re-encodes the native layers and regenerates the selection outline. Other assets use their own parameters and protective rules. [Exact Castle profile](docs/images/current-06x/castle-120-profile.json) · [36 selected standing profiles](manifests/2611.1-beta.5-selected-profiles.json) · [Inverse mapping](docs/TECHNICAL-SPEC.md) · [Full derivation](docs/MATHEMATICS.md)
+The renderer samples the inverse map at nearest source pixels, then re-encodes the native layers and regenerates the selection outline. Other assets use their own parameters and protective rules. [Castle geometry profile (prior package hashes)](docs/images/current-06x/castle-120-profile.json) · [36 selected standing geometry profiles](manifests/2611.1-beta.5-selected-profiles.json) · [Inverse mapping](docs/TECHNICAL-SPEC.md) · [Full derivation](docs/MATHEMATICS.md)
 
 ## Using the beta
 
-Enable only one house-height mod at a time; disable conflicting house-graphics mods and restart the game after changing them. Construction scaffolding and fire-effect positions remain original, so flames can appear above the shortened roof. Special Norse longhouses are excluded. Greek/Chronicles content is outside this mod’s supported scope.
+Disable conflicting house-graphics mods and restart the game after changing them. Construction scaffolding and fire-effect positions remain original, so flames can appear above the shortened roof. Special Norse longhouses are excluded. Greek/Chronicles content is outside this mod’s supported scope.
 
-**Selection caveat:** in a controlled Western Feudal-house test, clicking empty space above the shortened roof could still select the house. The cause and wider scope remain under investigation. Regenerating sprite outlines does not establish that every click target matches the visible roof.
+**Selection:** `2611.2-beta` corrects empty-space click selection. In sampled Western Feudal, Chinese Castle, Malian Feudal and Persian Castle checks, including damaged examples, tested empty space and transparent corners no longer selected the house while visible roofs remained selectable. **Hover highlighting may still extend above roofs.** These checks do not cover every pixel or all civilizations.
 
 The before/after above is current visual evidence, not exhaustive testing of every civilization, lifecycle state or player color. See [verification boundaries](docs/TEST-STATUS.md).
 
 ## Documentation
+
+- [Changelog](CHANGELOG.md)
 
 - [Current gameplay comparison](docs/GAMEPLAY-GALLERY.md)
 - [Product requirements](docs/PRD.md)

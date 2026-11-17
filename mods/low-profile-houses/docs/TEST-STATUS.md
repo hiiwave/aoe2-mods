@@ -1,12 +1,22 @@
 # Release and build evidence
 
-## Current version: 2611.1-beta.5
+## Current version: 2611.2-beta
+
+Published as an update to mod **583664** on **2026-11-17 UTC**. After subscribing and selecting **Check For Update**, all **108/108 downloaded SLD SHA-256 values matched the tested click-selection candidate**.
+
+The change repairs the layer-2 mask RLE encoding in 108 graphics files. The build report records `non_mask_bytes_exact` and `mask_values_exact` as true for all files: non-mask bytes and decoded mask values are preserved. Report: `mask-rle-all-report.json`, SHA-256 `6dacbe8189e78bd84370afeb5e8bdd134699c5279556662d8a230c4ee115ebcb`. The full report remains in the build workspace; this paragraph records the completed checks, not a repository-side rerun.
+
+Sampled runtime checks covered Western Feudal, Chinese Castle, Malian Feudal and Persian Castle houses, including damaged examples. Tested empty space and transparent corners did not select houses; visible roofs remained selectable. **Hover highlighting may still extend above roofs.** These are bounded samples, not exhaustive per-pixel or all-civilization validation.
+
+The original 0.6x geometry and visuals are unchanged. Earlier screenshot and geometry evidence remains relevant, but pre-fix SLD hashes below are not hashes of this release. See the [user-facing changelog](../CHANGELOG.md).
+
+## Prior package: 2611.1-beta.5
 
 **0.6x** is the height label (120 px upper bound), not the release version. The publication-description formatting revision uses `2611.1-beta.5`; that suffix is not evidence of a geometry change.
 
 The owner-selected [25-minute before/after](GAMEPLAY-GALLERY.md) is current in-game visual evidence. It shows original versus shortened houses, not exhaustive validation of all assets or lifecycle states.
 
-The repository still contains historical v0.2/v0.4 code, manifests and QA records. The [120 px build snapshot and payload verification](../manifests/2611.1-beta.5-verification.md) now record 108 assets whose hashes match the local publishing payload and subscribed public mod. The snapshot’s native-check results are build-time evidence, not a new full runtime test. The 36 selected standing control profiles have also been imported and matched to the manifest. Complete current reproducible source and comprehensive lifecycle runtime QA remain separate gaps. Do not relabel old results as current validation.
+The repository still contains historical v0.2/v0.4 code, manifests and QA records. The [120 px build snapshot and payload verification](../manifests/2611.1-beta.5-verification.md) now record 108 assets whose hashes matched the then-current local publishing payload and subscribed public mod before the 2611.2-beta mask-encoding update. The snapshot’s native-check results are build-time evidence, not a new full runtime test. The 36 selected standing control profiles have also been imported and matched to the manifest. Complete current reproducible source and comprehensive lifecycle runtime QA remain separate gaps. Do not relabel old results as current validation.
 
 ## Historical v0.4 package (110 px)
 
