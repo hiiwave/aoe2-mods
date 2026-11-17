@@ -1,0 +1,103 @@
+{
+  "asset": "b_west_house_age3_x1.sld",
+  "variant_number": 2,
+  "source_frame_index": 1,
+  "output_frame_index": 0,
+  "warp_mode": "west_castle",
+  "anchor": 183,
+  "k": 0.769767442,
+  "d": 12.739534884,
+  "seam": [
+    [
+      115,
+      151
+    ],
+    [
+      133,
+      158
+    ],
+    [
+      144,
+      171
+    ],
+    [
+      173,
+      157
+    ],
+    [
+      205,
+      177
+    ],
+    [
+      231,
+      184
+    ],
+    [
+      249,
+      174
+    ],
+    [
+      282,
+      156
+    ],
+    [
+      293,
+      157
+    ]
+  ],
+  "foot": [
+    [
+      115,
+      198
+    ],
+    [
+      133,
+      207
+    ],
+    [
+      144,
+      215
+    ],
+    [
+      173,
+      224
+    ],
+    [
+      205,
+      235
+    ],
+    [
+      231,
+      230
+    ],
+    [
+      249,
+      222
+    ],
+    [
+      282,
+      204
+    ],
+    [
+      293,
+      202
+    ]
+  ],
+  "source_bbox": [
+    115,
+    95,
+    293,
+    248
+  ],
+  "output_bbox": [
+    116,
+    128,
+    293,
+    248
+  ],
+  "source_sha256": "61c945bd722790ffaa96512dbc37b0a26b551f25285eea69bc0150faf4c52a68",
+  "output_sha256": "81bb374695187b3c1b1f3204e4f085094b392aef1f140c916b78d400a103407c",
+  "verification": "Decoded original variant and final candidate frame. Production west_castle warp alpha matches encoded output alpha; hotspot unchanged. Independent figure and formula review. This is one asset check, not exhaustive release QA.",
+  "source": "user-selected-120-v06/selected-profiles.json, build_lifecycle.warp dispatch and build_trial.warp castle branch",
+  "figure": "Shared crop [95,65,315,255], 2.5x nearest-neighbor display. Bboxes use half-open pixel bounds."
+}

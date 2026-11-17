@@ -13,10 +13,9 @@ Tall houses can hide units, terrain and small gaps in a wall. Low-Profile Houses
 ## Current standard
 
 - **120 px upper bound**, measured in the native standing-house main image. Houses at or below the target are not enlarged.
-- Transform from the **original assets**, not by enlarging the older 110 px output.
-- One selected variant per architecture and age, repeated across the normal variation slots for a consistent look. Selections are asset-specific.
+- One selected variant per architecture and age, repeated across the normal variation slots for a consistent look.
 - **0.6x is an approximate above-ground height description**, not a universal 0.6 multiplier on image coordinates or an exact recovered 3D measurement.
-- Graphics only. Ground footprints, collision and gameplay data remain unchanged. The sprite selection outline is a separate visual concern from ground collision.
+- Graphics only. Ground footprints, collision and gameplay data remain unchanged. Visual selection and ground collision are separate systems.
 
 ## Install
 
@@ -24,21 +23,49 @@ Tall houses can hide units, terrain and small gaps in a wall. Low-Profile Houses
 
 ## Method at a glance
 
-Keep the ground fixed; shorten the roof and the wall band separately, with per-house parameters:
+### Join a roof to a fixed ground line
+
+![Western Castle house: actual production mapping to 120 px](docs/images/current-06x/castle-120-actual-mapping.png)
+
+**Original variant 2 → actual encoded 120 px output**, shown at the same scale. Yellow: roof/wall seam. Mint: fixed foot line. These are image-space control polylines, not a reconstructed 3D mesh.
+
+For source coordinates $(x,y)$ with $y$ increasing downward, let $t(x)$ be the roof/wall seam and $b(x)$ the foot line. Let $a$ be the vertical anchor, $k$ the roof’s vertical scale, and $d$ its downward shift in pixels. The transformed seam and wall scale are
 
 ```math
-H_{\mathrm{target}}=\min(H_{\mathrm{original}},120\,\mathrm{px}),\qquad n(x)=a+k[t(x)-a]+d.
+n(x)=a+k\bigl(t(x)-a\bigr)+d,
+\qquad
+\lambda(x)=\frac{b(x)-n(x)}{b(x)-t(x)}.
 ```
 
-Here $t(x)$ is the original roof/wall seam; $n(x)$ is the transformed seam. Roof scale $k$, shift $d$ and anchor $a$ vary by asset. Special cases protect details and ground contact; this is **not a uniform 0.6 image resize**.
+The **Roof-Shift Hybrid** map is piecewise affine within each image column:
 
-![World-coordinate projection schematic](docs/images/lecture-world-axes.svg)
+```math
+F(x,y)=\bigl(x,f_x(y)\bigr),\qquad
+f_x(y)=
+\begin{cases}
+a+k(y-a)+d, & y<t(x),\\[3pt]
+n(x)+\lambda(x)\bigl(y-t(x)\bigr), & t(x)\le y<b(x),\\[3pt]
+y, & y\ge b(x).
+\end{cases}
+```
 
-*Coordinate illustration, not a sprite control mesh. [Transformation details](docs/TECHNICAL-SPEC.md) · [Mathematical derivation](docs/MATHEMATICS.md)*
+```math
+f_x\bigl(t(x)\bigr)=n(x),\qquad
+f_x\bigl(b(x)\bigr)=b(x),\qquad
+\frac{\partial f_x}{\partial y}\in\{k,\lambda(x),1\}\subset(0,\infty)\quad\text{away from the joins}.
+```
+
+The roof moves and compresses; the wall meets it continuously; the ground stays fixed. Positivity assumes $k>0$, $t(x)<b(x)$ and $n(x)<b(x)$, preventing continuous column foldovers, not raster detail loss.
+
+**This Castle profile:** $a=183$, $k=0.769767442$, $d=12.739534884$ px. Native main-alpha bounds change from $[95,248)$ to $[128,248)$: **153 → 120 px**. The measured bounds include visible ground details; 0.6x is not $k$, nor a uniform image resize.
+
+The renderer samples the inverse map at nearest source pixels, then re-encodes the native layers and regenerates the selection outline. Other assets use their own parameters and protective rules. [Exact profile and verification](docs/images/current-06x/castle-120-profile.json) · [Inverse mapping](docs/TECHNICAL-SPEC.md) · [Full derivation](docs/MATHEMATICS.md)
 
 ## Using the beta
 
-Enable only one house-height mod at a time; disable conflicting house-graphics mods and restart the game after changing them. Construction scaffolding and fire-effect positions remain original, so flames can appear above the shortened roof. Special Norse longhouses are excluded. Greek/Chronicles support is not an acceptance requirement for this competitive-gameplay project.
+Enable only one house-height mod at a time; disable conflicting house-graphics mods and restart the game after changing them. Construction scaffolding and fire-effect positions remain original, so flames can appear above the shortened roof. Special Norse longhouses are excluded. Greek/Chronicles content is outside this mod’s supported scope.
+
+**Selection caveat:** in a controlled Western Feudal-house test, clicking empty space above the shortened roof could still select the house. The cause and wider scope remain under investigation. Regenerating sprite outlines does not establish that every click target matches the visible roof.
 
 The before/after above is current visual evidence, not exhaustive testing of every civilization, lifecycle state or player color. See [verification boundaries](docs/TEST-STATUS.md).
 
@@ -56,6 +83,6 @@ The before/after above is current visual evidence, not exhaustive testing of eve
 
 ## Source versus release
 
-The checked-in builder reproduces the **historical v0.2 three-sprite 110 px trial**. The v0.4 manifests also document a historical 110 px package. Neither is a complete reproducible source export of the current 0.6x Beta. Current parameters, package manifests and lifecycle verification must be imported and checked before claiming that capability.
+The checked-in source currently covers earlier prototypes, not a complete reproducible build of this release. See [build scope and instructions](docs/BUILD.md).
 
 Raw game assets and mod binaries are excluded from this repository. Rebuilding historical examples requires a lawful local game installation. [License](../../LICENSE) and [game-content notice](../../GAME-CONTENT-NOTICE.md).
