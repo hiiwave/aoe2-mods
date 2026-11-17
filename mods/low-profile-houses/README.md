@@ -61,7 +61,7 @@ The roof moves and compresses; the wall meets it continuously; the ground stays 
 
 **This Castle profile:** $a=183$, $k\approx0.77$, $d\approx12.74$ px. Native main-alpha bounds change from $[95,248)$ to $[128,248)$: **153 → 120 px**. The measured bounds include visible ground details; 0.6x is not $k$, nor a uniform image resize.
 
-The renderer samples the inverse map at nearest source pixels, then re-encodes the native layers and regenerates the selection outline. Other assets use their own parameters and protective rules. [Exact profile and verification](docs/images/current-06x/castle-120-profile.json) · [Inverse mapping](docs/TECHNICAL-SPEC.md) · [Full derivation](docs/MATHEMATICS.md)
+The renderer samples the inverse map at nearest source pixels, then re-encodes the native layers and regenerates the selection outline. Other assets use their own parameters and protective rules. [Exact Castle profile](docs/images/current-06x/castle-120-profile.json) · [36 selected standing profiles](manifests/2611.1-beta.5-selected-profiles.json) · [Inverse mapping](docs/TECHNICAL-SPEC.md) · [Full derivation](docs/MATHEMATICS.md)
 
 ## Using the beta
 

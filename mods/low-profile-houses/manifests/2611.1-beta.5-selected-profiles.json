@@ -1,0 +1,2590 @@
+[
+  {
+    "name": "b_dark_house_age1_x1.sld",
+    "variant": 1,
+    "group": "west",
+    "size": 300,
+    "anchor": 133.0,
+    "seam": [
+      [
+        82,
+        107
+      ],
+      [
+        141,
+        133
+      ],
+      [
+        180,
+        142
+      ],
+      [
+        230,
+        142
+      ]
+    ],
+    "foot": [
+      [
+        60,
+        150
+      ],
+      [
+        82,
+        153
+      ],
+      [
+        141,
+        176
+      ],
+      [
+        180,
+        171
+      ],
+      [
+        230,
+        152
+      ],
+      [
+        240,
+        150
+      ]
+    ],
+    "warp_mode": "identity",
+    "source_sha256": "9549445145cac24e62d0a67d0657ff730725516ac4ac2545d6b3ab945c4129d7",
+    "baseline_110_parameters": {
+      "k": 0.9,
+      "d": 3.0
+    },
+    "source_height": 119,
+    "source_frame_alpha_sha256": "7fb158638225f8d3800647bcab82a933455aff712a3b6900c44b813b3663f294",
+    "identity_geometry": true,
+    "k": 1.0,
+    "d": 0.0,
+    "selected_sha256": "2fe9bc42f014f108dcfa33c8acbdb572e5b06ba5b3cd7ffcb881f47ab905dae6",
+    "output_sha256": "2fe9bc42f014f108dcfa33c8acbdb572e5b06ba5b3cd7ffcb881f47ab905dae6",
+    "candidate_id": "original-to120-b_dark_house_age1_x1-v2",
+    "target_cap": 120,
+    "output_height": 119,
+    "original_compressed_payload_preserved": true
+  },
+  {
+    "name": "b_archaic_house_age1_x1.sld",
+    "variant": 0,
+    "group": "c",
+    "size": 300,
+    "anchor": 145,
+    "seam": [
+      [
+        55,
+        120
+      ],
+      [
+        100,
+        140
+      ],
+      [
+        145,
+        127
+      ],
+      [
+        178,
+        145
+      ],
+      [
+        225,
+        124
+      ]
+    ],
+    "foot": [
+      [
+        55,
+        149
+      ],
+      [
+        100,
+        169
+      ],
+      [
+        145,
+        184
+      ],
+      [
+        178,
+        173
+      ],
+      [
+        225,
+        150
+      ]
+    ],
+    "source_sha256": "00c67458d19e989145f3a1a9a76a325ae0b2b5beb5ccb40a1fb2e217ee643a6d",
+    "baseline_110_parameters": {
+      "k": 0.625,
+      "d": 3.775
+    },
+    "source_height": 153,
+    "source_frame_alpha_sha256": "30c67b03b94eb0d8fda6a46b63092e72464cfc21193d2136ad411bbf3fc60fd6",
+    "k": 0.712209302,
+    "retune_fraction": 0.7674418604651163,
+    "d": 2.897093023,
+    "selected_sha256": "1eefe805d6e147ef2f926368ba08d5143ae3827912d286dde3d703826262a4a7",
+    "output_sha256": "1eefe805d6e147ef2f926368ba08d5143ae3827912d286dde3d703826262a4a7",
+    "candidate_id": "original-to120-b_archaic_house_age1_x1-v1",
+    "target_cap": 120,
+    "output_height": 120
+  },
+  {
+    "name": "b_afri_house_age2_x1.sld",
+    "variant": 0,
+    "group": "a",
+    "size": 300,
+    "anchor": 119,
+    "seam": [
+      [
+        62,
+        92
+      ],
+      [
+        112,
+        110
+      ],
+      [
+        144,
+        109
+      ],
+      [
+        186,
+        111
+      ],
+      [
+        229,
+        119
+      ]
+    ],
+    "foot": [
+      [
+        62,
+        150
+      ],
+      [
+        112,
+        170
+      ],
+      [
+        151,
+        184
+      ],
+      [
+        190,
+        167
+      ],
+      [
+        229,
+        153
+      ]
+    ],
+    "source_sha256": "43efe4a20385c1903a7ea1c9552b6959d2d6404a03e007c57abb8258d9bf6c13",
+    "baseline_110_parameters": {
+      "k": 0.725,
+      "d": 15.7
+    },
+    "source_height": 145,
+    "source_frame_alpha_sha256": "bf2e32f53b86a00de8cff86b20e4ebf812e4aa8439e62f158d36840a19ae10c5",
+    "k": 0.803571429,
+    "retune_fraction": 0.7142857142857143,
+    "d": 11.214285714,
+    "selected_sha256": "56b28c6ff95eac9bf49c176d581ff4e37869d7d304eaf66eb3a1691d1375e75d",
+    "output_sha256": "56b28c6ff95eac9bf49c176d581ff4e37869d7d304eaf66eb3a1691d1375e75d",
+    "candidate_id": "original-to120-b_afri_house_age2_x1-v1",
+    "target_cap": 120,
+    "output_height": 120
+  },
+  {
+    "name": "b_afri_house_age3_x1.sld",
+    "variant": 0,
+    "group": "a",
+    "size": 300,
+    "anchor": 145,
+    "seam": [
+      [
+        55,
+        108
+      ],
+      [
+        105,
+        127
+      ],
+      [
+        139,
+        145
+      ],
+      [
+        181,
+        129
+      ],
+      [
+        222,
+        118
+      ]
+    ],
+    "foot": [
+      [
+        55,
+        153
+      ],
+      [
+        105,
+        173
+      ],
+      [
+        149,
+        185
+      ],
+      [
+        184,
+        168
+      ],
+      [
+        222,
+        149
+      ]
+    ],
+    "source_sha256": "6a7228062e9d2aa1a37abd24ae54fb5ede73d3a6ac490493c2b001a728d659fb",
+    "baseline_110_parameters": {
+      "k": 0.675,
+      "d": 11.975
+    },
+    "source_height": 158,
+    "source_frame_alpha_sha256": "81431b6928b06c863c40e59e7adaf6320c56daeb19894b8aa2f4afccfbfda7d2",
+    "k": 0.742708333,
+    "retune_fraction": 0.7916666666666666,
+    "d": 9.480208333,
+    "selected_sha256": "4a4e112aa66a2d6a9ba77d3bdcb083aad08d01e8f0b84c96d8382c8951850278",
+    "output_sha256": "4a4e112aa66a2d6a9ba77d3bdcb083aad08d01e8f0b84c96d8382c8951850278",
+    "candidate_id": "original-to120-b_afri_house_age3_x1-v1",
+    "target_cap": 120,
+    "output_height": 120
+  },
+  {
+    "name": "b_ande_house_age2_x1.sld",
+    "variant": 2,
+    "group": "a",
+    "size": 300,
+    "anchor": 142,
+    "seam": [
+      [
+        50,
+        118
+      ],
+      [
+        95,
+        140
+      ],
+      [
+        137,
+        142
+      ],
+      [
+        179,
+        122
+      ],
+      [
+        210,
+        123
+      ],
+      [
+        242,
+        115
+      ]
+    ],
+    "foot": [
+      [
+        50,
+        149
+      ],
+      [
+        95,
+        169
+      ],
+      [
+        137,
+        184
+      ],
+      [
+        179,
+        166
+      ],
+      [
+        210,
+        151
+      ],
+      [
+        242,
+        145
+      ]
+    ],
+    "source_sha256": "e9429686d38c17d974dcd73de52a8f2eb9366f7548bf6d41fd9890d9291e74ad",
+    "baseline_110_parameters": {
+      "k": 0.725,
+      "d": 6.75
+    },
+    "source_height": 141,
+    "source_frame_alpha_sha256": "8398077cc37a49668532bc7231efb6a7c1de1ef5b31732bf57bdda09c9ce7984",
+    "k": 0.813709677,
+    "retune_fraction": 0.6774193548387096,
+    "d": 4.572580645,
+    "selected_sha256": "5480a18ef342bb395d5170b0a1226ff90143475f911e5900b0f17c648e812ebd",
+    "output_sha256": "5480a18ef342bb395d5170b0a1226ff90143475f911e5900b0f17c648e812ebd",
+    "candidate_id": "original-to120-b_ande_house_age2_x1-v3",
+    "target_cap": 120,
+    "output_height": 120
+  },
+  {
+    "name": "b_ande_house_age3_x1.sld",
+    "variant": 2,
+    "group": "a",
+    "size": 300,
+    "anchor": 143,
+    "seam": [
+      [
+        51,
+        113
+      ],
+      [
+        94,
+        132
+      ],
+      [
+        132,
+        143
+      ],
+      [
+        179,
+        125
+      ],
+      [
+        217,
+        114
+      ],
+      [
+        254,
+        126
+      ]
+    ],
+    "foot": [
+      [
+        51,
+        151
+      ],
+      [
+        94,
+        171
+      ],
+      [
+        132,
+        187
+      ],
+      [
+        179,
+        174
+      ],
+      [
+        217,
+        155
+      ],
+      [
+        254,
+        151
+      ]
+    ],
+    "source_sha256": "9f706a320a5903e6191c9a21d9dc655a5363b21f1fe9c56989a3bada3e345b37",
+    "baseline_110_parameters": {
+      "k": 0.575,
+      "d": 9.225
+    },
+    "source_height": 167,
+    "source_frame_alpha_sha256": "084e410da97203c3702bb02609f32e91b7f3aa0c9c77d424ae8805ffdab322a6",
+    "k": 0.649561404,
+    "retune_fraction": 0.8245614035087719,
+    "d": 7.606578947,
+    "selected_sha256": "e496dabbcf1ca5f713d995507c858b926182ca03baf2d550d7f08198c41c77e7",
+    "output_sha256": "e496dabbcf1ca5f713d995507c858b926182ca03baf2d550d7f08198c41c77e7",
+    "candidate_id": "original-to120-b_ande_house_age3_x1-v3",
+    "target_cap": 120,
+    "output_height": 120
+  },
+  {
+    "name": "b_asia_house_age2_x1.sld",
+    "variant": 1,
+    "group": "a",
+    "size": 300,
+    "anchor": 148,
+    "seam": [
+      [
+        50,
+        115
+      ],
+      [
+        83,
+        124
+      ],
+      [
+        118,
+        147
+      ],
+      [
+        162,
+        124
+      ],
+      [
+        200,
+        148
+      ],
+      [
+        255,
+        128
+      ]
+    ],
+    "foot": [
+      [
+        50,
+        150
+      ],
+      [
+        83,
+        166
+      ],
+      [
+        118,
+        178
+      ],
+      [
+        162,
+        169
+      ],
+      [
+        200,
+        181
+      ],
+      [
+        255,
+        151
+      ]
+    ],
+    "source_sha256": "86c2933fecd428950887e6a15449480a0ddb74bf30ef5b21109cc758af16b3d5",
+    "baseline_110_parameters": {
+      "k": 0.55,
+      "d": 0.05
+    },
+    "source_height": 166,
+    "source_frame_alpha_sha256": "fab6446509e7abe93d27a2a00ba0bcd03a3245d87edb1be9d66e5c79c7690b7a",
+    "k": 0.630357143,
+    "retune_fraction": 0.8214285714285714,
+    "d": 0.041071429,
+    "selected_sha256": "b90eb2cbd67472a1391ee1cc5c359d6afdf93fe0732c3f13b48171166be27f90",
+    "output_sha256": "b90eb2cbd67472a1391ee1cc5c359d6afdf93fe0732c3f13b48171166be27f90",
+    "candidate_id": "original-to120-b_asia_house_age2_x1-v2",
+    "target_cap": 120,
+    "output_height": 120
+  },
+  {
+    "name": "b_asia_house_age3_x1.sld",
+    "variant": 0,
+    "group": "a",
+    "size": 300,
+    "anchor": 160,
+    "seam": [
+      [
+        38,
+        117
+      ],
+      [
+        76,
+        137
+      ],
+      [
+        124,
+        160
+      ],
+      [
+        177,
+        134
+      ],
+      [
+        214,
+        113
+      ],
+      [
+        248,
+        107
+      ]
+    ],
+    "foot": [
+      [
+        38,
+        150
+      ],
+      [
+        76,
+        170
+      ],
+      [
+        124,
+        183
+      ],
+      [
+        177,
+        164
+      ],
+      [
+        214,
+        153
+      ],
+      [
+        248,
+        145
+      ]
+    ],
+    "source_sha256": "aae298c4773ef968e11b81896cb48809e59ab341089684c63b272a5ff5f379eb",
+    "baseline_110_parameters": {
+      "k": 0.55,
+      "d": -5.55
+    },
+    "source_height": 164,
+    "source_frame_alpha_sha256": "7ad0778f2f5c2f187d33f035d1e1aec481f8740aecb57e334197a7382c8e5c85",
+    "k": 0.633333333,
+    "retune_fraction": 0.8148148148148148,
+    "d": -4.522222222,
+    "selected_sha256": "d41d42b6361b737cd534f4de6f3c82cc8f6146cf353b6f744be81ea264908a6a",
+    "output_sha256": "d41d42b6361b737cd534f4de6f3c82cc8f6146cf353b6f744be81ea264908a6a",
+    "candidate_id": "original-to120-b_asia_house_age3_x1-v1",
+    "target_cap": 120,
+    "output_height": 120
+  },
+  {
+    "name": "b_ceas_house_age2_x1.sld",
+    "variant": 1,
+    "group": "a",
+    "size": 300,
+    "anchor": 128,
+    "seam": [
+      [
+        55,
+        107
+      ],
+      [
+        95,
+        124
+      ],
+      [
+        145,
+        107
+      ],
+      [
+        195,
+        128
+      ],
+      [
+        231,
+        106
+      ]
+    ],
+    "foot": [
+      [
+        55,
+        150
+      ],
+      [
+        95,
+        171
+      ],
+      [
+        145,
+        156
+      ],
+      [
+        195,
+        171
+      ],
+      [
+        231,
+        152
+      ]
+    ],
+    "source_sha256": "19e69abf35dc507a2327d04cac7c5d573a69f50cf141f74c1557d0fddff4e62b",
+    "baseline_110_parameters": {
+      "k": 0.825,
+      "d": 6.55
+    },
+    "source_height": 131,
+    "source_frame_alpha_sha256": "3b73422c1974d46efce60fcfedb382f489edc35f7e2178caa063cda64b32456e",
+    "k": 0.908333333,
+    "retune_fraction": 0.5238095238095238,
+    "d": 3.430952381,
+    "selected_sha256": "6e76d30e06f91aa963d5c4cff5e2842506b30fbafddc0d79f1f8cd782196af92",
+    "output_sha256": "6e76d30e06f91aa963d5c4cff5e2842506b30fbafddc0d79f1f8cd782196af92",
+    "candidate_id": "original-to120-b_ceas_house_age2_x1-v2",
+    "target_cap": 120,
+    "output_height": 120
+  },
+  {
+    "name": "b_ceas_house_age3_x1.sld",
+    "variant": 1,
+    "group": "a",
+    "size": 300,
+    "anchor": 149,
+    "seam": [
+      [
+        55,
+        110
+      ],
+      [
+        87,
+        128
+      ],
+      [
+        133,
+        149
+      ],
+      [
+        175,
+        134
+      ],
+      [
+        235,
+        111
+      ]
+    ],
+    "foot": [
+      [
+        55,
+        153
+      ],
+      [
+        87,
+        170
+      ],
+      [
+        133,
+        188
+      ],
+      [
+        175,
+        166
+      ],
+      [
+        235,
+        150
+      ]
+    ],
+    "source_sha256": "948d2740d6c3036e821e4eba99f65898339ce75691e98adab035c027d9a08397",
+    "baseline_110_parameters": {
+      "k": 0.575,
+      "d": -7.1
+    },
+    "source_height": 146,
+    "source_frame_alpha_sha256": "d991d84956cd4300df05e77bdd9c37a883cd05d6ba5d873334da300be33e7e7a",
+    "k": 0.693055556,
+    "retune_fraction": 0.7222222222222222,
+    "d": -5.127777778,
+    "selected_sha256": "2bf0731ffbc31c58ca9ed3ae9dbab55ffb197aed3aab1a0d8563b598ca896527",
+    "output_sha256": "2bf0731ffbc31c58ca9ed3ae9dbab55ffb197aed3aab1a0d8563b598ca896527",
+    "candidate_id": "original-to120-b_ceas_house_age3_x1-v2",
+    "target_cap": 120,
+    "output_height": 120
+  },
+  {
+    "name": "b_east_house_age2_x1.sld",
+    "variant": 2,
+    "group": "a",
+    "size": 300,
+    "anchor": 148,
+    "seam": [
+      [
+        39,
+        115
+      ],
+      [
+        79,
+        133
+      ],
+      [
+        121,
+        148
+      ],
+      [
+        165,
+        130
+      ],
+      [
+        204,
+        111
+      ],
+      [
+        242,
+        126
+      ]
+    ],
+    "foot": [
+      [
+        39,
+        150
+      ],
+      [
+        79,
+        167
+      ],
+      [
+        121,
+        178
+      ],
+      [
+        165,
+        160
+      ],
+      [
+        204,
+        148
+      ],
+      [
+        242,
+        151
+      ]
+    ],
+    "source_sha256": "286cd4d51f7d43ffc9109890e54a1f4fbfb5e2bda4a2b7c1708eb58055d51ae9",
+    "baseline_110_parameters": {
+      "k": 0.6,
+      "d": 2.4
+    },
+    "source_height": 161,
+    "source_frame_alpha_sha256": "177564ad5474213dcd5f63821f280d44fc524b13576df0620879fcc5c16b88a6",
+    "k": 0.678431373,
+    "retune_fraction": 0.803921568627451,
+    "d": 1.929411765,
+    "selected_sha256": "6bf96633f78f466772616457c5160918cbea07eeb43b3a8ffd3578b94fe4a519",
+    "output_sha256": "6bf96633f78f466772616457c5160918cbea07eeb43b3a8ffd3578b94fe4a519",
+    "candidate_id": "original-to120-b_east_house_age2_x1-v3",
+    "target_cap": 120,
+    "output_height": 120
+  },
+  {
+    "name": "b_east_house_age3_x1.sld",
+    "variant": 2,
+    "group": "a",
+    "size": 400,
+    "anchor": 190,
+    "seam": [
+      [
+        94,
+        164
+      ],
+      [
+        137,
+        179
+      ],
+      [
+        180,
+        190
+      ],
+      [
+        225,
+        172
+      ],
+      [
+        265,
+        148
+      ],
+      [
+        307,
+        165
+      ]
+    ],
+    "foot": [
+      [
+        94,
+        200
+      ],
+      [
+        137,
+        221
+      ],
+      [
+        180,
+        234
+      ],
+      [
+        225,
+        214
+      ],
+      [
+        265,
+        195
+      ],
+      [
+        307,
+        202
+      ]
+    ],
+    "source_sha256": "6ecb9ff7a279331149cd85ab38a06cee3c096b2e9b8672dc4b9f91cde8ed32f4",
+    "baseline_110_parameters": {
+      "k": 0.675,
+      "d": 6.7
+    },
+    "source_height": 155,
+    "source_frame_alpha_sha256": "ef9566957433b5800e693de87a99c6ee0dd43cd5272a8265129548b54e40190c",
+    "k": 0.747222222,
+    "retune_fraction": 0.7777777777777778,
+    "d": 5.211111111,
+    "selected_sha256": "edb9afae69a7402a61e70536ef9898db202bc5f19559ddc0cdaffa54cc46805a",
+    "output_sha256": "edb9afae69a7402a61e70536ef9898db202bc5f19559ddc0cdaffa54cc46805a",
+    "candidate_id": "original-to120-b_east_house_age3_x1-v3",
+    "target_cap": 120,
+    "output_height": 120
+  },
+  {
+    "name": "b_greek_house_age2_x1.sld",
+    "variant": 0,
+    "group": "c",
+    "size": 300,
+    "anchor": 107,
+    "seam": [
+      [
+        63,
+        87
+      ],
+      [
+        111,
+        104
+      ],
+      [
+        149,
+        107
+      ],
+      [
+        178,
+        86
+      ],
+      [
+        215,
+        75
+      ]
+    ],
+    "foot": [
+      [
+        63,
+        150
+      ],
+      [
+        111,
+        173
+      ],
+      [
+        149,
+        188
+      ],
+      [
+        178,
+        175
+      ],
+      [
+        215,
+        151
+      ]
+    ],
+    "source_sha256": "51ce4b96ad5f62b7ef6920a55c5a93e7ebe34ab7dbaf78be51f6e6fffbba5455",
+    "baseline_110_parameters": {
+      "k": 0.3,
+      "d": 5.65
+    },
+    "source_height": 171,
+    "source_frame_alpha_sha256": "f392f74ff4a2d59a1f6f38f7a9e36318ebfe9375fa3b2a766cea32f6a0d6fb0b",
+    "k": 0.414754098,
+    "retune_fraction": 0.8360655737704918,
+    "d": 4.723770492,
+    "selected_sha256": "3e3d21c16755a837ab1933c97d68bdf85cfd8f741373e6bffe5f59165b3ee695",
+    "output_sha256": "3e3d21c16755a837ab1933c97d68bdf85cfd8f741373e6bffe5f59165b3ee695",
+    "candidate_id": "original-to120-b_greek_house_age2_x1-v1",
+    "target_cap": 120,
+    "output_height": 120
+  },
+  {
+    "name": "b_greek_house_age3_x1.sld",
+    "variant": 0,
+    "group": "c",
+    "size": 300,
+    "anchor": 112,
+    "seam": [
+      [
+        60,
+        84
+      ],
+      [
+        102,
+        106
+      ],
+      [
+        133,
+        112
+      ],
+      [
+        179,
+        92
+      ],
+      [
+        213,
+        78
+      ],
+      [
+        235,
+        109
+      ]
+    ],
+    "foot": [
+      [
+        60,
+        155
+      ],
+      [
+        102,
+        175
+      ],
+      [
+        133,
+        190
+      ],
+      [
+        179,
+        177
+      ],
+      [
+        213,
+        158
+      ],
+      [
+        235,
+        155
+      ]
+    ],
+    "source_sha256": "b7baa5e74e5d4cb1fc3d9fd892d1994ca09b1ab0d8c094915c89b88b223b179a",
+    "baseline_110_parameters": {
+      "k": 0.4,
+      "d": 15.65
+    },
+    "source_height": 181,
+    "source_frame_alpha_sha256": "34765887faeaed36a3190c606b1c2c02272b043ce762c84626ab983ad42ad994",
+    "k": 0.484507042,
+    "retune_fraction": 0.8591549295774648,
+    "d": 13.445774648,
+    "selected_sha256": "f0f7936a17cf1e2fbcea7e2616a19f4cbac5c0a937d29dc86bae2faf63706039",
+    "output_sha256": "f0f7936a17cf1e2fbcea7e2616a19f4cbac5c0a937d29dc86bae2faf63706039",
+    "candidate_id": "original-to120-b_greek_house_age3_x1-v1",
+    "target_cap": 120,
+    "output_height": 120
+  },
+  {
+    "name": "b_indi_house_age2_x1.sld",
+    "variant": 2,
+    "group": "b",
+    "size": 400,
+    "anchor": 181,
+    "seam": [
+      [
+        130,
+        151
+      ],
+      [
+        157,
+        162
+      ],
+      [
+        195,
+        181
+      ],
+      [
+        226,
+        170
+      ],
+      [
+        276,
+        153
+      ]
+    ],
+    "foot": [
+      [
+        125,
+        208
+      ],
+      [
+        157,
+        221
+      ],
+      [
+        195,
+        231
+      ],
+      [
+        223,
+        229
+      ],
+      [
+        278,
+        211
+      ]
+    ],
+    "source_sha256": "dec8950b2d8153a7fe5825eac0bedb7b9281a06c8f6850b83131f315b2375342",
+    "baseline_110_parameters": {
+      "k": 0.8,
+      "d": 9.3
+    },
+    "source_height": 134,
+    "source_frame_alpha_sha256": "494d0fd8ec488f0efa823c1608f20ecc6bf15c5a04646983e60d69b6ccecd387",
+    "k": 0.883333333,
+    "retune_fraction": 0.5833333333333334,
+    "d": 5.425,
+    "selected_sha256": "662f6ddb7c3b8e8aa43ee6aaf41bd6e2408e692f90c1352e2d78a200e92e280b",
+    "output_sha256": "662f6ddb7c3b8e8aa43ee6aaf41bd6e2408e692f90c1352e2d78a200e92e280b",
+    "candidate_id": "original-to120-b_indi_house_age2_x1-v3",
+    "target_cap": 120,
+    "output_height": 120
+  },
+  {
+    "name": "b_indi_house_age3_x1.sld",
+    "variant": 2,
+    "group": "b",
+    "size": 300,
+    "anchor": 140,
+    "seam": [
+      [
+        60,
+        122
+      ],
+      [
+        113,
+        140
+      ],
+      [
+        150,
+        126
+      ],
+      [
+        191,
+        105
+      ],
+      [
+        225,
+        105
+      ]
+    ],
+    "foot": [
+      [
+        58,
+        157
+      ],
+      [
+        113,
+        181
+      ],
+      [
+        150,
+        175
+      ],
+      [
+        191,
+        165
+      ],
+      [
+        232,
+        151
+      ]
+    ],
+    "source_sha256": "599d6d545ed7109b3ed13e18f612e62c7c5ee499b2ca4a19b270e247cbc599eb",
+    "baseline_110_parameters": {
+      "k": 0.8,
+      "d": 3.7
+    },
+    "source_height": 131,
+    "source_frame_alpha_sha256": "10728e14fb5214075852228448b361ee7b7b0812621e9f09c7243ad358db8182",
+    "k": 0.895238095,
+    "retune_fraction": 0.5238095238095238,
+    "d": 1.938095238,
+    "selected_sha256": "cc685dc202f8d19b50540349031eb92900ba99ce0012618e3be95bf2f79f0ec3",
+    "output_sha256": "cc685dc202f8d19b50540349031eb92900ba99ce0012618e3be95bf2f79f0ec3",
+    "candidate_id": "original-to120-b_indi_house_age3_x1-v3",
+    "target_cap": 120,
+    "output_height": 120
+  },
+  {
+    "name": "b_medi_house_age2_x1.sld",
+    "variant": 0,
+    "group": "b",
+    "size": 300,
+    "anchor": 143,
+    "seam": [
+      [
+        61,
+        101
+      ],
+      [
+        101,
+        105
+      ],
+      [
+        131,
+        130
+      ],
+      [
+        153,
+        121
+      ],
+      [
+        180,
+        143
+      ],
+      [
+        198,
+        131
+      ],
+      [
+        224,
+        126
+      ]
+    ],
+    "foot": [
+      [
+        55,
+        152
+      ],
+      [
+        101,
+        166
+      ],
+      [
+        131,
+        179
+      ],
+      [
+        153,
+        175
+      ],
+      [
+        180,
+        184
+      ],
+      [
+        198,
+        174
+      ],
+      [
+        224,
+        157
+      ]
+    ],
+    "source_sha256": "57164f2829eae0e48c6e2e282013118ae4a79a55ddb61b38b3150e32a3d657e4",
+    "baseline_110_parameters": {
+      "k": 0.775,
+      "d": 1.725
+    },
+    "source_height": 131,
+    "source_frame_alpha_sha256": "3d66dad46e8e68145ae77cead3ff799c64c79da49a5b55f805c95f4c474ccc69",
+    "k": 0.882142857,
+    "retune_fraction": 0.5238095238095238,
+    "d": 0.903571429,
+    "selected_sha256": "18c5ead10c9873ee62c034bec5c92716238d3d22e5be178119eb46772b510a01",
+    "output_sha256": "18c5ead10c9873ee62c034bec5c92716238d3d22e5be178119eb46772b510a01",
+    "candidate_id": "original-to120-b_medi_house_age2_x1-v1",
+    "target_cap": 120,
+    "output_height": 120
+  },
+  {
+    "name": "b_medi_house_age3_x1.sld",
+    "variant": 0,
+    "group": "b",
+    "size": 400,
+    "anchor": 190,
+    "seam": [
+      [
+        115,
+        140
+      ],
+      [
+        153,
+        151
+      ],
+      [
+        173,
+        169
+      ],
+      [
+        194,
+        160
+      ],
+      [
+        216,
+        190
+      ],
+      [
+        252,
+        163
+      ],
+      [
+        297,
+        153
+      ]
+    ],
+    "foot": [
+      [
+        113,
+        204
+      ],
+      [
+        153,
+        220
+      ],
+      [
+        173,
+        230
+      ],
+      [
+        194,
+        224
+      ],
+      [
+        216,
+        233
+      ],
+      [
+        252,
+        216
+      ],
+      [
+        297,
+        194
+      ]
+    ],
+    "source_sha256": "4e96c1a4bf03c759083a184c57addee38b4a7b0b626114ae43656b9622994599",
+    "baseline_110_parameters": {
+      "k": 0.775,
+      "d": 10.25
+    },
+    "source_height": 142,
+    "source_frame_alpha_sha256": "cfa6df77e9afbca3b266688d27a7928beab2eff3d1098cbb7005d04c88b26e05",
+    "k": 0.8453125,
+    "retune_fraction": 0.6875,
+    "d": 7.046875,
+    "selected_sha256": "fe2aad6ccffe1ffe5082d54f6754d8e83b529de709a8cf2e7845d3c609b0959b",
+    "output_sha256": "fe2aad6ccffe1ffe5082d54f6754d8e83b529de709a8cf2e7845d3c609b0959b",
+    "candidate_id": "original-to120-b_medi_house_age3_x1-v1",
+    "target_cap": 120,
+    "output_height": 120
+  },
+  {
+    "name": "b_meso_house_age2_x1.sld",
+    "variant": 2,
+    "group": "b",
+    "size": 400,
+    "anchor": 166,
+    "seam": [
+      [
+        139,
+        139
+      ],
+      [
+        170,
+        150
+      ],
+      [
+        200,
+        166
+      ],
+      [
+        232,
+        155
+      ],
+      [
+        284,
+        145
+      ]
+    ],
+    "foot": [
+      [
+        130,
+        194
+      ],
+      [
+        170,
+        211
+      ],
+      [
+        200,
+        218
+      ],
+      [
+        232,
+        209
+      ],
+      [
+        292,
+        190
+      ]
+    ],
+    "source_sha256": "7f3c694420ecae1bdf939f50e773138635e4c97a9bff332f2e1e10059ae00c8d",
+    "baseline_110_parameters": {
+      "k": 0.675,
+      "d": 5.1
+    },
+    "source_height": 143,
+    "source_frame_alpha_sha256": "55caa2d42f626be6d1aac464c44e480a503ee40326f81262167cd94f7c8f7428",
+    "k": 0.773484848,
+    "retune_fraction": 0.696969696969697,
+    "d": 3.554545455,
+    "selected_sha256": "fedb347b2aeb62caa9575f44f970a65faa70e35cc6fb3fdd7b7336a7c7d65391",
+    "output_sha256": "fedb347b2aeb62caa9575f44f970a65faa70e35cc6fb3fdd7b7336a7c7d65391",
+    "candidate_id": "original-to120-b_meso_house_age2_x1-v3",
+    "target_cap": 120,
+    "output_height": 120
+  },
+  {
+    "name": "b_meso_house_age3_x1.sld",
+    "variant": 2,
+    "group": "b",
+    "size": 300,
+    "anchor": 114,
+    "seam": [
+      [
+        92,
+        83
+      ],
+      [
+        120,
+        96
+      ],
+      [
+        158,
+        114
+      ],
+      [
+        193,
+        101
+      ],
+      [
+        243,
+        86
+      ]
+    ],
+    "foot": [
+      [
+        76,
+        145
+      ],
+      [
+        120,
+        166
+      ],
+      [
+        158,
+        179
+      ],
+      [
+        193,
+        166
+      ],
+      [
+        249,
+        145
+      ]
+    ],
+    "source_sha256": "bae11f8c9f338bb4f064bc28269cdf45bcade4676895b419c25ce93c3d65fbc0",
+    "baseline_110_parameters": {
+      "k": 0.425,
+      "d": 11.95
+    },
+    "source_height": 179,
+    "source_frame_alpha_sha256": "db9dafc275f94858d0e977b494d65d22fda84552294dcd08b6854df7cda8efc1",
+    "k": 0.508333333,
+    "retune_fraction": 0.855072463768116,
+    "d": 10.218115942,
+    "selected_sha256": "9a09a42cf7a3f5aa836384ca5e9fa08301d32b92106f5d740446dd4e0226ab7d",
+    "output_sha256": "9a09a42cf7a3f5aa836384ca5e9fa08301d32b92106f5d740446dd4e0226ab7d",
+    "candidate_id": "original-to120-b_meso_house_age3_x1-v3",
+    "target_cap": 120,
+    "output_height": 120
+  },
+  {
+    "name": "b_nors_house_age2_x1.sld",
+    "variant": 0,
+    "group": "b",
+    "size": 300,
+    "anchor": 156,
+    "seam": [
+      [
+        65,
+        136
+      ],
+      [
+        105,
+        146
+      ],
+      [
+        147,
+        156
+      ],
+      [
+        183,
+        128
+      ],
+      [
+        204,
+        97
+      ],
+      [
+        224,
+        136
+      ]
+    ],
+    "foot": [
+      [
+        65,
+        153
+      ],
+      [
+        105,
+        173
+      ],
+      [
+        147,
+        186
+      ],
+      [
+        183,
+        170
+      ],
+      [
+        204,
+        153
+      ],
+      [
+        224,
+        155
+      ]
+    ],
+    "source_sha256": "a310b0925a4e08ef7adc99fc310e64bef32869cb19b985bc2a9327bd5d443bd8",
+    "baseline_110_parameters": {
+      "k": 0.545,
+      "d": 3.51
+    },
+    "source_height": 177,
+    "source_frame_alpha_sha256": "f7b57ac265caebe089445c837f4de3a87e6428fa4efb5fd85dd8440b4da68651",
+    "k": 0.612910448,
+    "retune_fraction": 0.8507462686567164,
+    "d": 2.986119403,
+    "selected_sha256": "af7b6282f21ad40fcf2c5e2376fee6237f97b2d6539dc828a1acdcd6d75ce649",
+    "output_sha256": "af7b6282f21ad40fcf2c5e2376fee6237f97b2d6539dc828a1acdcd6d75ce649",
+    "candidate_id": "original-to120-b_nors_house_age2_x1-v1",
+    "target_cap": 120,
+    "output_height": 120
+  },
+  {
+    "name": "b_nors_house_age3_x1.sld",
+    "variant": 0,
+    "group": "b",
+    "size": 300,
+    "anchor": 160,
+    "seam": [
+      [
+        58,
+        135
+      ],
+      [
+        99,
+        155
+      ],
+      [
+        145,
+        160
+      ],
+      [
+        179,
+        140
+      ],
+      [
+        204,
+        100
+      ],
+      [
+        231,
+        128
+      ]
+    ],
+    "foot": [
+      [
+        58,
+        154
+      ],
+      [
+        99,
+        174
+      ],
+      [
+        145,
+        187
+      ],
+      [
+        179,
+        172
+      ],
+      [
+        204,
+        157
+      ],
+      [
+        231,
+        149
+      ]
+    ],
+    "source_sha256": "da3e8bfa279aac675b7fa080073aa31bb22734db3c639f014a350058f008fc8a",
+    "baseline_110_parameters": {
+      "k": 0.49,
+      "d": -4.71
+    },
+    "source_height": 183,
+    "source_frame_alpha_sha256": "57057da7042284024ca71118a69d004e11237d3c77569fbd8524831572f16ca4",
+    "k": 0.559863014,
+    "retune_fraction": 0.863013698630137,
+    "d": -4.064794521,
+    "selected_sha256": "3f7d849a240962417abf087d944f4e93da3f38b1b913a006baf3c90f6625579a",
+    "output_sha256": "3f7d849a240962417abf087d944f4e93da3f38b1b913a006baf3c90f6625579a",
+    "candidate_id": "original-to120-b_nors_house_age3_x1-v1",
+    "target_cap": 120,
+    "output_height": 120
+  },
+  {
+    "name": "b_orie_house_age2_x1.sld",
+    "variant": 1,
+    "group": "b",
+    "size": 400,
+    "anchor": 203,
+    "seam": [
+      [
+        123,
+        157
+      ],
+      [
+        164,
+        177
+      ],
+      [
+        192,
+        190
+      ],
+      [
+        217,
+        178
+      ],
+      [
+        238,
+        203
+      ],
+      [
+        271,
+        183
+      ]
+    ],
+    "foot": [
+      [
+        123,
+        210
+      ],
+      [
+        164,
+        230
+      ],
+      [
+        192,
+        241
+      ],
+      [
+        217,
+        232
+      ],
+      [
+        238,
+        224
+      ],
+      [
+        271,
+        208
+      ]
+    ],
+    "source_sha256": "7484beec04bf678612e56f6622c79d632ee3432c4634f029ab983ad93aa5b8a6",
+    "baseline_110_parameters": {
+      "k": 0.725,
+      "d": 6.8
+    },
+    "source_height": 146,
+    "source_frame_alpha_sha256": "e8104b3ed935df492db923a083d55fb43b5ac12a76d1264012aefcba1443458c",
+    "k": 0.801388889,
+    "retune_fraction": 0.7222222222222222,
+    "d": 4.911111111,
+    "selected_sha256": "dbafdbb2e2789b89caf9a739cbbf62366d22b06b022ada4172e5716cb778f751",
+    "output_sha256": "dbafdbb2e2789b89caf9a739cbbf62366d22b06b022ada4172e5716cb778f751",
+    "candidate_id": "original-to120-b_orie_house_age2_x1-v2",
+    "target_cap": 120,
+    "output_height": 120
+  },
+  {
+    "name": "b_orie_house_age3_x1.sld",
+    "variant": 1,
+    "group": "b",
+    "size": 400,
+    "anchor": 179,
+    "seam": [
+      [
+        126,
+        143
+      ],
+      [
+        160,
+        160
+      ],
+      [
+        191,
+        179
+      ],
+      [
+        220,
+        160
+      ],
+      [
+        247,
+        176
+      ],
+      [
+        281,
+        154
+      ]
+    ],
+    "foot": [
+      [
+        126,
+        205
+      ],
+      [
+        160,
+        220
+      ],
+      [
+        191,
+        234
+      ],
+      [
+        220,
+        218
+      ],
+      [
+        247,
+        210
+      ],
+      [
+        281,
+        200
+      ]
+    ],
+    "source_sha256": "207b8d12f9812ff3630f34144efccd6b8542a61432ad42806674a8373ebac8a2",
+    "baseline_110_parameters": {
+      "k": 0.65,
+      "d": 3.1
+    },
+    "source_height": 141,
+    "source_frame_alpha_sha256": "580b0e739e3d45bc6ddc717f2a15f9f0599e55994be90b1474ef633f08390d1a",
+    "k": 0.762903226,
+    "retune_fraction": 0.6774193548387096,
+    "d": 2.1,
+    "selected_sha256": "455a30e1ae493c5505d3e42a517c5762d5c059c5e687f3f8c04d980f4c9ce808",
+    "output_sha256": "455a30e1ae493c5505d3e42a517c5762d5c059c5e687f3f8c04d980f4c9ce808",
+    "candidate_id": "original-to120-b_orie_house_age3_x1-v2",
+    "target_cap": 120,
+    "output_height": 120
+  },
+  {
+    "name": "b_persian_house_age2_x1.sld",
+    "variant": 1,
+    "group": "c",
+    "size": 300,
+    "anchor": 143,
+    "seam": [
+      [
+        45,
+        124
+      ],
+      [
+        78,
+        143
+      ],
+      [
+        111,
+        131
+      ],
+      [
+        151,
+        132
+      ],
+      [
+        194,
+        113
+      ],
+      [
+        225,
+        99
+      ]
+    ],
+    "foot": [
+      [
+        45,
+        153
+      ],
+      [
+        78,
+        172
+      ],
+      [
+        111,
+        179
+      ],
+      [
+        151,
+        185
+      ],
+      [
+        194,
+        164
+      ],
+      [
+        225,
+        148
+      ]
+    ],
+    "source_sha256": "ddccfd6eb95aca48b40f8dddab4536e2cb7805ffff938c655c332d4b96ea57d1",
+    "baseline_110_parameters": {
+      "k": 0.45,
+      "d": -1.35
+    },
+    "source_height": 171,
+    "source_frame_alpha_sha256": "d3977f761b2a8d4fbebb12f2860a0fc3b052e8708b99d106053bc9b846424c35",
+    "k": 0.540163934,
+    "retune_fraction": 0.8360655737704918,
+    "d": -1.128688525,
+    "selected_sha256": "845f337a88049239b139fac8afcf9bd215b161b9faf8e491290580146776509d",
+    "output_sha256": "845f337a88049239b139fac8afcf9bd215b161b9faf8e491290580146776509d",
+    "candidate_id": "original-to120-b_persian_house_age2_x1-v2",
+    "target_cap": 120,
+    "output_height": 120
+  },
+  {
+    "name": "b_persian_house_age3_x1.sld",
+    "variant": 1,
+    "group": "c",
+    "size": 300,
+    "anchor": 134,
+    "seam": [
+      [
+        54,
+        101
+      ],
+      [
+        95,
+        122
+      ],
+      [
+        119,
+        114
+      ],
+      [
+        146,
+        134
+      ],
+      [
+        190,
+        116
+      ],
+      [
+        231,
+        99
+      ]
+    ],
+    "foot": [
+      [
+        54,
+        154
+      ],
+      [
+        95,
+        172
+      ],
+      [
+        119,
+        180
+      ],
+      [
+        146,
+        190
+      ],
+      [
+        190,
+        173
+      ],
+      [
+        231,
+        153
+      ]
+    ],
+    "source_sha256": "a209299a771d83214b4062c2c630ede269b44835d167f6a4343698c10626777f",
+    "baseline_110_parameters": {
+      "k": 0.45,
+      "d": 5.7
+    },
+    "source_height": 172,
+    "source_frame_alpha_sha256": "a673d4e96d20136a92f718cdf14d4e9414c4221ef12d4b81023d7d1e39c7d02c",
+    "k": 0.538709677,
+    "retune_fraction": 0.8387096774193549,
+    "d": 4.780645161,
+    "selected_sha256": "1d5a3dcf23a8d789132bce3554fe3320472ed71199e6a12b2f37dec94ac51774",
+    "output_sha256": "1d5a3dcf23a8d789132bce3554fe3320472ed71199e6a12b2f37dec94ac51774",
+    "candidate_id": "original-to120-b_persian_house_age3_x1-v2",
+    "target_cap": 120,
+    "output_height": 120
+  },
+  {
+    "name": "b_puru_house_age2_x1.sld",
+    "variant": 0,
+    "group": "c",
+    "size": 300,
+    "anchor": 116,
+    "seam": [
+      [
+        62,
+        97
+      ],
+      [
+        110,
+        116
+      ],
+      [
+        146,
+        99
+      ],
+      [
+        174,
+        115
+      ],
+      [
+        221,
+        96
+      ]
+    ],
+    "foot": [
+      [
+        62,
+        148
+      ],
+      [
+        110,
+        171
+      ],
+      [
+        146,
+        174
+      ],
+      [
+        174,
+        166
+      ],
+      [
+        221,
+        144
+      ]
+    ],
+    "source_sha256": "a7ce1e804447002d3c22f611d1e7c19ccc71b6b0432be03c4ca8e48d16e0eb31",
+    "baseline_110_parameters": {
+      "k": 0.75,
+      "d": 17.15
+    },
+    "source_height": 144,
+    "source_frame_alpha_sha256": "60e0540a8863253018181b71bfd8f22c8b0ba29ae5f2cd3ceb49affdbcf0ea57",
+    "k": 0.823529412,
+    "retune_fraction": 0.7058823529411765,
+    "d": 12.105882353,
+    "selected_sha256": "a8693204bef2a04743252788a8459647855af42af477bd8184b64a9cacceb802",
+    "output_sha256": "a8693204bef2a04743252788a8459647855af42af477bd8184b64a9cacceb802",
+    "candidate_id": "original-to120-b_puru_house_age2_x1-v1",
+    "target_cap": 120,
+    "output_height": 120
+  },
+  {
+    "name": "b_puru_house_age3_x1.sld",
+    "variant": 0,
+    "group": "c",
+    "size": 300,
+    "anchor": 108,
+    "seam": [
+      [
+        59,
+        82
+      ],
+      [
+        111,
+        102
+      ],
+      [
+        149,
+        87
+      ],
+      [
+        176,
+        108
+      ],
+      [
+        222,
+        88
+      ]
+    ],
+    "foot": [
+      [
+        59,
+        151
+      ],
+      [
+        111,
+        174
+      ],
+      [
+        149,
+        186
+      ],
+      [
+        176,
+        177
+      ],
+      [
+        222,
+        153
+      ]
+    ],
+    "source_sha256": "32ebd5655c75f2fbf6354dace51550e8085277ec44a011a4a274906b29934a87",
+    "baseline_110_parameters": {
+      "k": 0.575,
+      "d": 19.95
+    },
+    "source_height": 162,
+    "source_frame_alpha_sha256": "05682a7915064d63a9c9e6c8c572a3ebfd0fbbc02efbd18b430449166570e058",
+    "k": 0.656730769,
+    "retune_fraction": 0.8076923076923077,
+    "d": 16.113461538,
+    "selected_sha256": "2801f307213820f463ac91f0e2d6a82951aca8f9a1b0aaf74d27ded4298bcea7",
+    "output_sha256": "2801f307213820f463ac91f0e2d6a82951aca8f9a1b0aaf74d27ded4298bcea7",
+    "candidate_id": "original-to120-b_puru_house_age3_x1-v1",
+    "target_cap": 120,
+    "output_height": 120
+  },
+  {
+    "name": "b_seas_house_age2_x1.sld",
+    "variant": 1,
+    "group": "b",
+    "size": 400,
+    "anchor": 177,
+    "seam": [
+      [
+        142,
+        161
+      ],
+      [
+        175,
+        176
+      ],
+      [
+        206,
+        177
+      ],
+      [
+        237,
+        163
+      ],
+      [
+        267,
+        152
+      ],
+      [
+        297,
+        158
+      ]
+    ],
+    "foot": [
+      [
+        142,
+        219
+      ],
+      [
+        175,
+        232
+      ],
+      [
+        206,
+        242
+      ],
+      [
+        237,
+        231
+      ],
+      [
+        267,
+        214
+      ],
+      [
+        297,
+        204
+      ]
+    ],
+    "source_sha256": "2273209a212458c9e0ded9505790690c8f05c440344d03a6ec5a0cb3811f6358",
+    "baseline_110_parameters": {
+      "k": 0.475,
+      "d": 10.7
+    },
+    "source_height": 176,
+    "source_frame_alpha_sha256": "61ec0208a4d3e219211ff071dd0a054e8919af5b188c23fb1f62dcddb8e49381",
+    "k": 0.554545455,
+    "retune_fraction": 0.8484848484848485,
+    "d": 9.078787879,
+    "selected_sha256": "a5d3aab336200aec72d68275af710e33e090109dd8dd9eaa92f6e3d9c298957c",
+    "output_sha256": "a5d3aab336200aec72d68275af710e33e090109dd8dd9eaa92f6e3d9c298957c",
+    "candidate_id": "original-to120-b_seas_house_age2_x1-v2",
+    "target_cap": 120,
+    "output_height": 120
+  },
+  {
+    "name": "b_seas_house_age3_x1.sld",
+    "variant": 1,
+    "group": "b",
+    "size": 400,
+    "anchor": 170,
+    "seam": [
+      [
+        126,
+        151
+      ],
+      [
+        165,
+        170
+      ],
+      [
+        194,
+        164
+      ],
+      [
+        225,
+        157
+      ],
+      [
+        254,
+        141
+      ],
+      [
+        280,
+        150
+      ]
+    ],
+    "foot": [
+      [
+        126,
+        215
+      ],
+      [
+        165,
+        233
+      ],
+      [
+        194,
+        236
+      ],
+      [
+        225,
+        223
+      ],
+      [
+        254,
+        214
+      ],
+      [
+        280,
+        204
+      ]
+    ],
+    "source_sha256": "060b5f0816a151ce9a6b3591b662d4b496f5356ceb9cbaa1a807a23d3d8c5e3e",
+    "baseline_110_parameters": {
+      "k": 0.5,
+      "d": 12.8
+    },
+    "source_height": 180,
+    "source_frame_alpha_sha256": "8a7095845ceed06a97fe2269940aef817f8a9da9ff8d832662df8ccd44318bb8",
+    "k": 0.571428571,
+    "retune_fraction": 0.8571428571428571,
+    "d": 10.971428571,
+    "selected_sha256": "a934f2be10c1d010db73e3c80a7a023aa9a287e8f8b5eef76f251da898e94dec",
+    "output_sha256": "a934f2be10c1d010db73e3c80a7a023aa9a287e8f8b5eef76f251da898e94dec",
+    "candidate_id": "original-to120-b_seas_house_age3_x1-v2",
+    "target_cap": 120,
+    "output_height": 120
+  },
+  {
+    "name": "b_slav_house_age2_x1.sld",
+    "variant": 1,
+    "group": "b",
+    "size": 300,
+    "anchor": 137,
+    "seam": [
+      [
+        60,
+        101
+      ],
+      [
+        94,
+        119
+      ],
+      [
+        128,
+        134
+      ],
+      [
+        163,
+        118
+      ],
+      [
+        199,
+        137
+      ],
+      [
+        213,
+        112
+      ]
+    ],
+    "foot": [
+      [
+        60,
+        151
+      ],
+      [
+        94,
+        170
+      ],
+      [
+        128,
+        182
+      ],
+      [
+        163,
+        171
+      ],
+      [
+        199,
+        161
+      ],
+      [
+        213,
+        150
+      ]
+    ],
+    "source_sha256": "eafe78176cc079de5a28d847fb549cf3abc0a8d40be0189bead69acb2e45847e",
+    "baseline_110_parameters": {
+      "k": 0.55,
+      "d": -0.35
+    },
+    "source_height": 163,
+    "source_frame_alpha_sha256": "dd3595a1a6e9ed39eb74d9b7d8e47d053117aca2648f9fbc117d092de97bbd43",
+    "k": 0.63490566,
+    "retune_fraction": 0.8113207547169812,
+    "d": -0.283962264,
+    "selected_sha256": "f3643355892e7820f8c7e29cb7bd94079803bce16e37a5ff5bb848fcd5624a17",
+    "output_sha256": "f3643355892e7820f8c7e29cb7bd94079803bce16e37a5ff5bb848fcd5624a17",
+    "candidate_id": "original-to120-b_slav_house_age2_x1-v2",
+    "target_cap": 120,
+    "output_height": 120
+  },
+  {
+    "name": "b_slav_house_age3_x1.sld",
+    "variant": 1,
+    "group": "b",
+    "size": 300,
+    "anchor": 134,
+    "seam": [
+      [
+        62,
+        98
+      ],
+      [
+        99,
+        118
+      ],
+      [
+        129,
+        134
+      ],
+      [
+        164,
+        116
+      ],
+      [
+        196,
+        126
+      ],
+      [
+        215,
+        102
+      ]
+    ],
+    "foot": [
+      [
+        62,
+        149
+      ],
+      [
+        99,
+        169
+      ],
+      [
+        129,
+        179
+      ],
+      [
+        164,
+        172
+      ],
+      [
+        196,
+        160
+      ],
+      [
+        215,
+        149
+      ]
+    ],
+    "source_sha256": "dd5072f725d20a706cd685e1010048b613372aec0f1ead208fbec2af0b68ca54",
+    "baseline_110_parameters": {
+      "k": 0.55,
+      "d": 3.55
+    },
+    "source_height": 166,
+    "source_frame_alpha_sha256": "88204c5f4eb3ad83f712da83b30b9a6c0a67b3c7bb7646fdc202d001fb5e21df",
+    "k": 0.630357143,
+    "retune_fraction": 0.8214285714285714,
+    "d": 2.916071429,
+    "selected_sha256": "8aa65033ae6c398b04953c6db77e78600674e3404a7f99e6c1395d918adae072",
+    "output_sha256": "8aa65033ae6c398b04953c6db77e78600674e3404a7f99e6c1395d918adae072",
+    "candidate_id": "original-to120-b_slav_house_age3_x1-v2",
+    "target_cap": 120,
+    "output_height": 120
+  },
+  {
+    "name": "b_thracian_house_age2_x1.sld",
+    "variant": 0,
+    "group": "c",
+    "size": 300,
+    "anchor": 129,
+    "seam": [
+      [
+        76,
+        96
+      ],
+      [
+        112,
+        114
+      ],
+      [
+        135,
+        129
+      ],
+      [
+        178,
+        109
+      ],
+      [
+        202,
+        94
+      ]
+    ],
+    "foot": [
+      [
+        76,
+        149
+      ],
+      [
+        112,
+        165
+      ],
+      [
+        135,
+        175
+      ],
+      [
+        178,
+        156
+      ],
+      [
+        202,
+        146
+      ]
+    ],
+    "source_sha256": "aa97aa84c97813d409ee06044fe0124008d3cd4588c5b6198691abee4cf18b3b",
+    "baseline_110_parameters": {
+      "k": 0.625,
+      "d": 10.275
+    },
+    "source_height": 152,
+    "source_frame_alpha_sha256": "d9a1fe5abd9b44a3b0cfc3a25b6cecc5af5aaffd0d976b0ec44e3a57e9426897",
+    "k": 0.714285714,
+    "retune_fraction": 0.7619047619047619,
+    "d": 7.828571429,
+    "selected_sha256": "bf140146182ee39c6901526ac2e21cec2b47809839f6a51b0cfd01d3e9655f40",
+    "output_sha256": "bf140146182ee39c6901526ac2e21cec2b47809839f6a51b0cfd01d3e9655f40",
+    "candidate_id": "original-to120-b_thracian_house_age2_x1-v1",
+    "target_cap": 120,
+    "output_height": 120
+  },
+  {
+    "name": "b_thracian_house_age3_x1.sld",
+    "variant": 0,
+    "group": "c",
+    "size": 600,
+    "anchor": 283,
+    "seam": [
+      [
+        224,
+        250
+      ],
+      [
+        252,
+        269
+      ],
+      [
+        282,
+        283
+      ],
+      [
+        321,
+        261
+      ],
+      [
+        367,
+        244
+      ]
+    ],
+    "foot": [
+      [
+        224,
+        296
+      ],
+      [
+        252,
+        310
+      ],
+      [
+        282,
+        326
+      ],
+      [
+        321,
+        308
+      ],
+      [
+        367,
+        290
+      ]
+    ],
+    "source_sha256": "ff990268a2bd0aae682c902a5e85bb7488779356683b5df5a3b272bf59a85a68",
+    "baseline_110_parameters": {
+      "k": 0.45,
+      "d": -1.2
+    },
+    "source_height": 164,
+    "source_frame_alpha_sha256": "daa16115b6fb31b8371b07ca6d565cde6ce46d4dfe272e746060e5ffe7236ecf",
+    "k": 0.551851852,
+    "retune_fraction": 0.8148148148148148,
+    "d": -0.977777778,
+    "selected_sha256": "09eaff27843c6c6de71378207f4afd709866da89eb60a83afb9fe42a2871e059",
+    "output_sha256": "09eaff27843c6c6de71378207f4afd709866da89eb60a83afb9fe42a2871e059",
+    "candidate_id": "original-to120-b_thracian_house_age3_x1-v1",
+    "target_cap": 120,
+    "output_height": 120
+  },
+  {
+    "name": "b_west_house_age2_x1.sld",
+    "variant": 2,
+    "group": "west",
+    "size": 400,
+    "anchor": 181,
+    "seam": [
+      [
+        113,
+        152
+      ],
+      [
+        144,
+        168
+      ],
+      [
+        173,
+        177
+      ],
+      [
+        201,
+        169
+      ],
+      [
+        236,
+        181
+      ],
+      [
+        280,
+        164
+      ]
+    ],
+    "foot": [
+      [
+        110,
+        200
+      ],
+      [
+        144,
+        216
+      ],
+      [
+        173,
+        225
+      ],
+      [
+        201,
+        219
+      ],
+      [
+        236,
+        229
+      ],
+      [
+        282,
+        205
+      ]
+    ],
+    "warp_mode": "generic",
+    "source_sha256": "0ad890ee5672e278a2718b11d9307daf42801c5df2404ab6768e708c46a1d981",
+    "baseline_110_parameters": {
+      "k": 0.605,
+      "d": 9.085
+    },
+    "source_height": 158,
+    "source_frame_alpha_sha256": "dc4806ce6771de26862e06469153fb8b6919a10b6f7f1afe92fa8af88e2886b6",
+    "k": 0.687291667,
+    "retune_fraction": 0.7916666666666666,
+    "d": 7.192291667,
+    "selected_sha256": "9e71b3f270215ee4905d7d0e0266ed7a666bea4639c0dca6628ca947875c680a",
+    "output_sha256": "9e71b3f270215ee4905d7d0e0266ed7a666bea4639c0dca6628ca947875c680a",
+    "candidate_id": "original-to120-b_west_house_age2_x1-v3",
+    "target_cap": 120,
+    "output_height": 120
+  },
+  {
+    "name": "b_west_house_age3_x1.sld",
+    "variant": 1,
+    "group": "west",
+    "size": 400,
+    "anchor": 183.0,
+    "seam": [
+      [
+        115,
+        151
+      ],
+      [
+        133,
+        158
+      ],
+      [
+        144,
+        171
+      ],
+      [
+        173,
+        157
+      ],
+      [
+        205,
+        177
+      ],
+      [
+        231,
+        184
+      ],
+      [
+        249,
+        174
+      ],
+      [
+        282,
+        156
+      ],
+      [
+        293,
+        157
+      ]
+    ],
+    "foot": [
+      [
+        115,
+        198
+      ],
+      [
+        133,
+        207
+      ],
+      [
+        144,
+        215
+      ],
+      [
+        173,
+        224
+      ],
+      [
+        205,
+        235
+      ],
+      [
+        231,
+        230
+      ],
+      [
+        249,
+        222
+      ],
+      [
+        282,
+        204
+      ],
+      [
+        293,
+        202
+      ]
+    ],
+    "warp_mode": "west_castle",
+    "source_sha256": "61c945bd722790ffaa96512dbc37b0a26b551f25285eea69bc0150faf4c52a68",
+    "baseline_110_parameters": {
+      "k": 0.7,
+      "d": 16.6
+    },
+    "source_height": 153,
+    "source_frame_alpha_sha256": "fd95912e35659276364a8646215803023f73ca391c8d72c086436cec1e5503a4",
+    "k": 0.769767442,
+    "retune_fraction": 0.7674418604651163,
+    "d": 12.739534884,
+    "selected_sha256": "81bb374695187b3c1b1f3204e4f085094b392aef1f140c916b78d400a103407c",
+    "output_sha256": "81bb374695187b3c1b1f3204e4f085094b392aef1f140c916b78d400a103407c",
+    "candidate_id": "original-to120-b_west_house_age3_x1-v2",
+    "target_cap": 120,
+    "output_height": 120
+  }
+]
