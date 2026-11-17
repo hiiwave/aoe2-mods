@@ -7,6 +7,8 @@ Only authored source and documentation are stored here. Supply the three origina
 Python 3 with NumPy and Pillow is required. Use an isolated virtual environment.
 
 ```sh
+# From the repository root:
+cd mods/low-profile-houses
 python -m venv .venv
 # Activate the environment using the command appropriate to your OS.
 python -m pip install -r requirements.txt
