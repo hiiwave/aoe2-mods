@@ -2,7 +2,7 @@
 
 ## Current version: 2611.2-beta
 
-Published as an update to mod **583664** on **2026-11-17 UTC**. After subscribing and selecting **Check For Update**, all **108/108 downloaded SLD SHA-256 values matched the tested click-selection candidate**.
+Published as an update to mod **583664** on **2026-11-17 UTC**. After subscribing and selecting **Check For Update**, all **108/108 downloaded SLD SHA-256 values matched the tested click-selection candidate**. The per-file download record is `download-verification.json` (SHA-256 `b9e40e1159d9f044a0d54a68e66410253000e41af9ac1a7ba31a1067899e2cd2`). This confirms subscribed downloads, not Browse search-index visibility; the contemporaneous Browse search still returned no result.
 
 The change repairs the layer-2 mask RLE encoding in 108 graphics files. The build report records `non_mask_bytes_exact` and `mask_values_exact` as true for all files: non-mask bytes and decoded mask values are preserved. Report: `mask-rle-all-report.json`, SHA-256 `6dacbe8189e78bd84370afeb5e8bdd134699c5279556662d8a230c4ee115ebcb`. The full report remains in the build workspace; this paragraph records the completed checks, not a repository-side rerun.
 
