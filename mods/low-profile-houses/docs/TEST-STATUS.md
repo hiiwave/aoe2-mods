@@ -1,6 +1,6 @@
 # Release and build evidence
 
-## Current release family: 2611.1-beta
+## Current version: 2611.1-beta.5
 
 **0.6x** is the height label (120 px upper bound), not the release version. The publication-description formatting revision uses `2611.1-beta.5`; that suffix is not evidence of a geometry change.
 

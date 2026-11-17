@@ -12,7 +12,7 @@ Tall houses can hide units, terrain and small gaps in a wall. Low-Profile Houses
 
 ## Current standard
 
-Release family: **`2611.1-beta`** (CalVer). **0.6x names the height treatment, not a version number.**
+Current version: **`2611.1-beta.5`** (CalVer). **0.6x names the height treatment, not a version number.**
 
 - **120 px upper bound**, measured in the native standing-house main image. Houses at or below the target are not enlarged.
 - One selected variant per architecture and age, repeated across the normal variation slots for a consistent look.
