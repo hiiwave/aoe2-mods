@@ -43,8 +43,8 @@ The **Roof-Shift Hybrid** map is piecewise affine within each image column:
 F(x,y)=\bigl(x,f_x(y)\bigr),\qquad
 f_x(y)=
 \begin{cases}
-a+k(y-a)+d, & y<t(x),\\[3pt]
-n(x)+\lambda(x)\bigl(y-t(x)\bigr), & t(x)\le y<b(x),\\[3pt]
+a+k(y-a)+d, & y\lt t(x),\\
+n(x)+\lambda(x)\bigl(y-t(x)\bigr), & t(x)\le y\lt b(x),\\
 y, & y\ge b(x).
 \end{cases}
 ```
@@ -57,7 +57,7 @@ f_x\bigl(b(x)\bigr)=b(x),\qquad
 
 The roof moves and compresses; the wall meets it continuously; the ground stays fixed. Positivity assumes $k>0$, $t(x)<b(x)$ and $n(x)<b(x)$, preventing continuous column foldovers, not raster detail loss.
 
-**This Castle profile:** $a=183$, $k=0.769767442$, $d=12.739534884$ px. Native main-alpha bounds change from $[95,248)$ to $[128,248)$: **153 → 120 px**. The measured bounds include visible ground details; 0.6x is not $k$, nor a uniform image resize.
+**This Castle profile:** $a=183$, $k\approx0.77$, $d\approx12.74$ px. Native main-alpha bounds change from $[95,248)$ to $[128,248)$: **153 → 120 px**. The measured bounds include visible ground details; 0.6x is not $k$, nor a uniform image resize.
 
 The renderer samples the inverse map at nearest source pixels, then re-encodes the native layers and regenerates the selection outline. Other assets use their own parameters and protective rules. [Exact profile and verification](docs/images/current-06x/castle-120-profile.json) · [Inverse mapping](docs/TECHNICAL-SPEC.md) · [Full derivation](docs/MATHEMATICS.md)
 
