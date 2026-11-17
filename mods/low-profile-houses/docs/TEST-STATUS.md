@@ -1,6 +1,8 @@
-# Versions and evidence
+# Release and build evidence
 
-## Current: 0.6x Beta / 120 px upper bound
+## Current release family: 2611.1-beta
+
+**0.6x** is the height label (120 px upper bound), not the release version. The publication-description formatting revision uses `2611.1-beta.5`; that suffix is not evidence of a geometry change.
 
 The owner-selected [25-minute before/after](GAMEPLAY-GALLERY.md) is current in-game visual evidence. It shows original versus shortened houses, not exhaustive validation of all assets or lifecycle states.
 

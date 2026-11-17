@@ -2,7 +2,7 @@
 
 ## Current decisions
 
-- 0.6x Beta / 120 px upper bound is the standard; shorter originals are not enlarged.
+- 0.6x names the standard height treatment with a 120 px upper bound; shorter originals are not enlarged. Release identifiers use CalVer (`2611.1-beta`), not the height label.
 - Start from original assets. Keep approximate above-ground height naming distinct from image-space pixel targets.
 - Retain the owner's variant choices and the graphics-only boundary.
 - Keep old screenshots, parameters and test records explicitly historical. Lead with current real-game before/after evidence.

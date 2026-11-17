@@ -1,4 +1,4 @@
-# Product requirements: 0.6x Beta
+# Product requirements: Low-Profile Houses (0.6x)
 
 Author: **hiiwave**. Current standard: **120 px upper bound**.
 
