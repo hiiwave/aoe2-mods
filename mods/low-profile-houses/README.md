@@ -54,7 +54,7 @@ y, & y\ge b(x).
 ```math
 f_x\bigl(t(x)\bigr)=n(x),\qquad
 f_x\bigl(b(x)\bigr)=b(x),\qquad
-f_x'(y)\in\{k,\lambda(x),1\}\subset(0,\infty)\quad\text{away from the joins}.
+\frac{\partial f_x}{\partial y}\in\{k,\lambda(x),1\}\subset(0,\infty)\quad\text{away from the joins}.
 ```
 
 The roof moves and compresses; the wall meets it continuously; the ground stays fixed. Positivity assumes $k>0$, $t(x)<b(x)$ and $n(x)<b(x)$, preventing continuous column foldovers, not raster detail loss.
