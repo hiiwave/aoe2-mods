@@ -4,7 +4,7 @@
 
 The current height treatment is named **0.6x** (CalVer version `2611.1-beta.5`), with a **120 px upper bound**, starting from original graphics and leaving shorter houses unchanged. The name estimates above-ground height; it is not a uniform image-space scale. The equations below explain the method, while the numerical profile table and checked-in source files below are **historical v0.2 / 110 px examples**, not the current release configuration. The general seam/roof/wall equations also appear in the inspected 120 px builder; some Western assets dispatch to specialized protection rules.
 
-The [current package manifest](../manifests/0.6x-120px-verification.md) is now checked in and its 108 hashes match the subscribed release. Full current configuration and source import remain incomplete; do not infer byte reproducibility from this historical implementation.
+The [current package manifest](../manifests/2611.1-beta.5-verification.md) is now checked in and its 108 hashes match the subscribed release. Full current configuration and source import remain incomplete; do not infer byte reproducibility from this historical implementation.
 
 ## Data flow
 Lawful local game SLD files -> bounded decoder -> selected original frame -> age-specific 2D inverse warp -> aligned main / shadow / damage / player layers -> regenerated outline mask -> native SLD writer -> readback validation -> isolated local-mod folder -> ZIP.

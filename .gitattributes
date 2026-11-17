@@ -4,4 +4,4 @@
 *.json text eol=lf
 
 # Preserve this original build evidence byte-for-byte.
-mods/low-profile-houses/manifests/0.6x-120px-build-snapshot.json -text
+mods/low-profile-houses/manifests/2611.1-beta.5-build-snapshot.json -text
